@@ -53,11 +53,11 @@ module BingAdsApi
 		
 		# Valid Columns for this report request 
 		COLUMNS = BingAdsApi::Config.instance.
-			reporting_constants['campaign_performance_report']['columns']
+			reporting_constants['call_detail_report']['columns']
 		
 		# Valid Filters for this report request 
 		FILTERS = BingAdsApi::Config.instance.
-			reporting_constants['campaign_performance_report']['filter']
+			reporting_constants['call_detail_report']['filter']
 		
 		
 		# Public : Constructor. Adds a validations for the columns, filter 
@@ -178,7 +178,7 @@ module BingAdsApi
 			def type_attribute_for_soap
 				return BingAdsApi::ClientProxy::NAMESPACE.to_s + ":" + 
 					BingAdsApi::Config.instance.
-						reporting_constants['campaign_performance_report']['type']
+						reporting_constants['call_detail_report']['type']
 			end
 			
 	end

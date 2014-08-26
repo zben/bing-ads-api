@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
-<title>class BingAdsApi::ClientProxy - BingAdsApi</title>
+<title>class BingAdsApi::ClientProxy - RDoc Documentation</title>
 
 <link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
 
@@ -43,11 +43,16 @@
 </nav>
 
 
+  
+
   <div id="file-metadata">
     <nav id="file-list-section" class="section">
   <h3 class="section-header">Defined In</h3>
   <ul>
     <li>lib/bing-ads-api/client_proxy.rb
+    <li>lib/bing-ads-api/data/reporting/account_performance_report_request.rb
+    <li>lib/bing-ads-api/data/reporting/call_detail_report_request.rb
+    <li>lib/bing-ads-api/data/reporting/campaign_performance_report_request.rb
   </ul>
 </nav>
 
@@ -59,10 +64,11 @@
     <nav id="parent-class-section" class="section">
   <h3 class="section-header">Parent</h3>
   
-  <p class="link">Object
+  <p class="link"><a href="../Object.html">Object</a>
   
 </nav>
 
+    
     
     <!-- Method Quickref -->
 <nav id="method-list-section" class="section">
@@ -70,9 +76,9 @@
 
   <ul class="link-list">
     
-    <li><a href="#method-c-new">::new</a>
+    <li ><a href="#method-c-new">::new</a>
     
-    <li><a href="#method-i-call">#call</a>
+    <li ><a href="#method-i-call">#call</a>
     
   </ul>
 </nav>
@@ -85,7 +91,147 @@
 
   <ul>
   
+    <li class="file"><a href="../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../MIT-LICENSE.html">MIT-LICENSE</a>
+  
     <li class="file"><a href="../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../bing-ads-api_gemspec.html">bing-ads-api.gemspec</a>
+  
+    <li class="file"><a href="../lib/tasks/bing-ads-api_tasks_rake.html">bing-ads-api_tasks.rake</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi_html.html">BingAdsApi.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/AccountInfo_html.html">AccountInfo.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/AccountPerformanceReportRequest_html.html">AccountPerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/AccountThroughCampaignReportScope_html.html">AccountThroughCampaignReportScope.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/Ad_html.html">Ad.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/AdApiError_html.html">AdApiError.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/AdApiFaultDetail_html.html">AdApiFaultDetail.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/AdGroup_html.html">AdGroup.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/AdLanguage_html.html">AdLanguage.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ApiException_html.html">ApiException.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ApiFaultDetail_html.html">ApiFaultDetail.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ApplicationFault_html.html">ApplicationFault.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/BatchError_html.html">BatchError.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/Campaign_html.html">Campaign.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/CampaignManagement_html.html">CampaignManagement.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/CampaignPerformanceReportFilter_html.html">CampaignPerformanceReportFilter.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/CampaignPerformanceReportRequest_html.html">CampaignPerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/CampaignScope_html.html">CampaignScope.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ClientProxy_html.html">ClientProxy.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/Config_html.html">Config.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/CustomerManagement_html.html">CustomerManagement.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/DataObject_html.html">DataObject.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/EditorialError_html.html">EditorialError.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/Helpers_html.html">Helpers.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/Helpers/ColumnHelper_html.html">ColumnHelper.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/Helpers/FilterHelper_html.html">FilterHelper.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/Helpers/ScopeHelper_html.html">ScopeHelper.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/Helpers/TimeHelper_html.html">TimeHelper.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/MobileAd_html.html">MobileAd.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/OperationError_html.html">OperationError.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/PartialErrors_html.html">PartialErrors.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/PerformanceReportRequest_html.html">PerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ProductAd_html.html">ProductAd.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ReportAggregation_html.html">ReportAggregation.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ReportFormat_html.html">ReportFormat.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ReportLanguage_html.html">ReportLanguage.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ReportRequest_html.html">ReportRequest.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ReportRequestStatus_html.html">ReportRequestStatus.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/ReportTimePeriods_html.html">ReportTimePeriods.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/Reporting_html.html">Reporting.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/SOAPHasheable_html.html">SOAPHasheable.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/Service_html.html">Service.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/TextAd_html.html">TextAd.html</a>
+  
+    <li class="file"><a href="../rdoc/BingAdsApi/TimeZone_html.html">TimeZone.html</a>
+  
+    <li class="file"><a href="../rdoc/README_rdoc_html.html">README_rdoc.html</a>
+  
+    <li class="file"><a href="../rdoc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../rdoc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../rdoc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../rdoc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../rdoc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../rdoc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../rdoc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../rdoc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../rdoc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../rdoc/table_of_contents_html.html">table_of_contents.html</a>
+  
+    <li class="file"><a href="../test/dummy/README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../test/dummy/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../test/dummy/app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li class="file"><a href="../test/dummy/app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li class="file"><a href="../test/dummy/config_ru.html">config.ru</a>
+  
+    <li class="file"><a href="../test/dummy/public/404_html.html">404.html</a>
+  
+    <li class="file"><a href="../test/dummy/public/422_html.html">422.html</a>
+  
+    <li class="file"><a href="../test/dummy/public/500_html.html">500.html</a>
+  
+    <li class="file"><a href="../test/dummy/public/favicon_ico.html">favicon.ico</a>
   
   </ul>
 </nav>
@@ -94,6 +240,10 @@
   <h3 class="section-header">Class and Module Index</h3>
 
   <ul class="link-list">
+  
+    <li><a href="../ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="../ApplicationHelper.html">ApplicationHelper</a>
   
     <li><a href="../BingAdsApi.html">BingAdsApi</a>
   
@@ -118,6 +268,8 @@
     <li><a href="../BingAdsApi/ApplicationFault.html">BingAdsApi::ApplicationFault</a>
   
     <li><a href="../BingAdsApi/BatchError.html">BingAdsApi::BatchError</a>
+  
+    <li><a href="../BingAdsApi/CallDetailReportRequest.html">BingAdsApi::CallDetailReportRequest</a>
   
     <li><a href="../BingAdsApi/Campaign.html">BingAdsApi::Campaign</a>
   
@@ -177,6 +329,24 @@
   
     <li><a href="../BingAdsApi/TimeZone.html">BingAdsApi::TimeZone</a>
   
+    <li><a href="../BingAdsApiTest.html">BingAdsApiTest</a>
+  
+    <li><a href="../CampaignManagementTest.html">CampaignManagementTest</a>
+  
+    <li><a href="../CustomerManagementTest.html">CustomerManagementTest</a>
+  
+    <li><a href="../DataObjectTest.html">DataObjectTest</a>
+  
+    <li><a href="../Dummy.html">Dummy</a>
+  
+    <li><a href="../Dummy/Application.html">Dummy::Application</a>
+  
+    <li><a href="../Object.html">Object</a>
+  
+    <li><a href="../ReportRequestTest.html">ReportRequestTest</a>
+  
+    <li><a href="../ReportingTest.html">ReportingTest</a>
+  
   </ul>
 </nav>
 
@@ -211,7 +381,7 @@ de autenticación y el WSDL al servicio que se requiere.</pre>
 }
 <span class="ruby-comment"># =&gt; Instancia de ClientProxy</span>
 <span class="ruby-identifier">client</span> = <span class="ruby-constant">BingAdsApi</span><span class="ruby-operator">::</span><span class="ruby-constant">ClientProxy</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">options</span>)
-<span class="ruby-comment"># =&gt; Llamada a servicio 'GetCampaignsByAccountId'</span>
+<span class="ruby-comment"># =&gt; Llamada a servicio &#39;GetCampaignsByAccountId&#39;</span>
 <span class="ruby-identifier">response</span> = <span class="ruby-identifier">client</span>.<span class="ruby-identifier">service</span>.<span class="ruby-identifier">call</span>(:<span class="ruby-identifier">get_campaigns_by_account_id</span>,
   <span class="ruby-identifier">message</span><span class="ruby-operator">:</span> { <span class="ruby-constant">Account_id</span><span class="ruby-operator">:</span> <span class="ruby-identifier">client</span>.<span class="ruby-identifier">account_id</span>})
 </pre>
@@ -256,6 +426,19 @@ usada</p>
       <div id="attribute-i-account_id" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">account_id</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Atributos del client proxy</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-authentication_token" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">authentication_token</span><span
             class="attribute-access-type">[RW]</span>
         </div>
 
@@ -371,7 +554,9 @@ usada</p>
         <div class="method-heading">
           <span class="method-name">new</span><span
             class="method-args">(options=nil)</span>
+          
           <span class="method-click-advice">click to toggle source</span>
+          
         </div>
         
 
@@ -383,18 +568,18 @@ usada</p>
 <p>jlopezn@neonline.cl</p>
 </dd></dl>
 
-<h3 id="method-c-new-label-Parameters">Parameters</h3>
+<h3 id="method-c-new-label-Parameters">Parameters<span><a href="#method-c-new-label-Parameters">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
 
 <p>options - Hash con valores de autenticación y WSDL</p>
 
-<h3 id="method-c-new-label-Options">Options</h3>
+<h3 id="method-c-new-label-Options">Options<span><a href="#method-c-new-label-Options">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
 <ul><li>
 <p>username - Bing Ads username</p>
 </li><li>
-<p>passwrod - Bing Ads user’s sign-in password</p>
+<p>passwrod - Bing Ads user&#39;s sign-in password</p>
 </li><li>
 <p><a href="ClientProxy.html#attribute-i-developer_token">#developer_token</a>
-- client application's developer access token</p>
+- client application&#39;s developer access token</p>
 </li><li>
 <p><a href="ClientProxy.html#attribute-i-customer_id">#customer_id</a> -
 identifier for the customer that owns the account</p>
@@ -409,7 +594,7 @@ WSDL to be called</p>
 logger or enconding)</p>
 </li></ul>
 
-<h3 id="method-c-new-label-Examples+">Examples </h3>
+<h3 id="method-c-new-label-Examples+">Examples <span><a href="#method-c-new-label-Examples+">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
 
 <pre class="ruby"><span class="ruby-identifier">options</span> = {
   :<span class="ruby-identifier">username</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;username&quot;</span>,
@@ -427,14 +612,19 @@ logger or enconding)</p>
 <p><a href="ClientProxy.html">ClientProxy</a> instance</p>
 </dd></dl>
           
+          
 
           
           <div class="method-source-code" id="new-source">
             <pre><span class="ruby-comment"># File lib/bing-ads-api/client_proxy.rb, line 68</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">options</span>=<span class="ruby-keyword">nil</span>)
         <span class="ruby-keyword">if</span> <span class="ruby-identifier">options</span>
-                <span class="ruby-ivar">@username</span>        <span class="ruby-operator">||=</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:username</span>]
-                <span class="ruby-ivar">@password</span>        <span class="ruby-operator">||=</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:password</span>]
+                <span class="ruby-keyword">if</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:authentication_token</span>]
+                        <span class="ruby-ivar">@authentication_token</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:authentication_token</span>]
+                <span class="ruby-keyword">else</span>
+                        <span class="ruby-ivar">@username</span>    <span class="ruby-operator">||=</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:username</span>]
+                        <span class="ruby-ivar">@password</span>    <span class="ruby-operator">||=</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:password</span>]
+                <span class="ruby-keyword">end</span>
                 <span class="ruby-ivar">@developer_token</span> <span class="ruby-operator">||=</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:developer_token</span>]
                 <span class="ruby-ivar">@wsdl_url</span>        <span class="ruby-operator">||=</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:wsdl_url</span>]
                 <span class="ruby-ivar">@account_id</span>      <span class="ruby-operator">||=</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:account_id</span>]
@@ -464,7 +654,9 @@ logger or enconding)</p>
         <div class="method-heading">
           <span class="method-name">call</span><span
             class="method-args">(service_name, message, options={})</span>
+          
           <span class="method-click-advice">click to toggle source</span>
+          
         </div>
         
 
@@ -476,12 +668,12 @@ logger or enconding)</p>
 <p>jlopezn@neonline.cl</p>
 </dd></dl>
 
-<h3 id="method-i-call-label-Parameters">Parameters</h3>
+<h3 id="method-i-call-label-Parameters">Parameters<span><a href="#method-i-call-label-Parameters">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
 
 <p>service_name - <a href="Service.html">Service</a> to be called message -
 Message for the service options - Additional options for the service</p>
 
-<h3 id="method-i-call-label-Examples+">Examples </h3>
+<h3 id="method-i-call-label-Examples+">Examples <span><a href="#method-i-call-label-Examples+">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
 
 <pre class="ruby"><span class="ruby-identifier">client</span>.<span class="ruby-identifier">call_service</span>(:<span class="ruby-identifier">some_service_name</span>, {<span class="ruby-identifier">key</span><span class="ruby-operator">:</span> <span class="ruby-identifier">value</span>}) 
 <span class="ruby-comment"># =&gt; &lt;Response&gt;</span>
@@ -494,10 +686,11 @@ Message for the service options - Additional options for the service</p>
 <p>Savon::SOAPFault Savon::HTTPError Savon::InvalidResponseError</p>
 </dd></dl>
           
+          
 
           
           <div class="method-source-code" id="call-source">
-            <pre><span class="ruby-comment"># File lib/bing-ads-api/client_proxy.rb, line 97</span>
+            <pre><span class="ruby-comment"># File lib/bing-ads-api/client_proxy.rb, line 101</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">call</span>(<span class="ruby-identifier">service_name</span>, <span class="ruby-identifier">message</span>, <span class="ruby-identifier">options</span>={})
         <span class="ruby-keyword">self</span>.<span class="ruby-identifier">service</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">service_name</span>, <span class="ruby-identifier">message</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -520,7 +713,7 @@ Message for the service options - Additional options for the service</p>
 
 <footer id="validator-badges">
   <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
-  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
   <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
 </footer>
 

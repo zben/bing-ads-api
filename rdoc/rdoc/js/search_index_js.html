@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>search_index.js - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../MIT-LICENSE.html">MIT-LICENSE</a>
+  
+    <li class="file"><a href="../../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../../Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../bing-ads-api_gemspec.html">bing-ads-api.gemspec</a>
+  
+    <li class="file"><a href="../../lib/tasks/bing-ads-api_tasks_rake.html">bing-ads-api_tasks.rake</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi_html.html">BingAdsApi.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AccountInfo_html.html">AccountInfo.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AccountPerformanceReportRequest_html.html">AccountPerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AccountThroughCampaignReportScope_html.html">AccountThroughCampaignReportScope.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Ad_html.html">Ad.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdApiError_html.html">AdApiError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdApiFaultDetail_html.html">AdApiFaultDetail.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdGroup_html.html">AdGroup.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdLanguage_html.html">AdLanguage.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ApiException_html.html">ApiException.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ApiFaultDetail_html.html">ApiFaultDetail.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ApplicationFault_html.html">ApplicationFault.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/BatchError_html.html">BatchError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Campaign_html.html">Campaign.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignManagement_html.html">CampaignManagement.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignPerformanceReportFilter_html.html">CampaignPerformanceReportFilter.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignPerformanceReportRequest_html.html">CampaignPerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignScope_html.html">CampaignScope.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ClientProxy_html.html">ClientProxy.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Config_html.html">Config.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CustomerManagement_html.html">CustomerManagement.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/DataObject_html.html">DataObject.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/EditorialError_html.html">EditorialError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers_html.html">Helpers.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/ColumnHelper_html.html">ColumnHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/FilterHelper_html.html">FilterHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/ScopeHelper_html.html">ScopeHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/TimeHelper_html.html">TimeHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/MobileAd_html.html">MobileAd.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/OperationError_html.html">OperationError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/PartialErrors_html.html">PartialErrors.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/PerformanceReportRequest_html.html">PerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ProductAd_html.html">ProductAd.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportAggregation_html.html">ReportAggregation.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportFormat_html.html">ReportFormat.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportLanguage_html.html">ReportLanguage.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportRequest_html.html">ReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportRequestStatus_html.html">ReportRequestStatus.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportTimePeriods_html.html">ReportTimePeriods.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Reporting_html.html">Reporting.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/SOAPHasheable_html.html">SOAPHasheable.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Service_html.html">Service.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/TextAd_html.html">TextAd.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/TimeZone_html.html">TimeZone.html</a>
+  
+    <li class="file"><a href="../../rdoc/README_rdoc_html.html">README_rdoc.html</a>
+  
+    <li class="file"><a href="../../rdoc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../rdoc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../rdoc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../../rdoc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../rdoc/table_of_contents_html.html">table_of_contents.html</a>
+  
+    <li class="file"><a href="../../test/dummy/README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../../test/dummy/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../test/dummy/app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li class="file"><a href="../../test/dummy/app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li class="file"><a href="../../test/dummy/config_ru.html">config.ru</a>
+  
+    <li class="file"><a href="../../test/dummy/public/404_html.html">404.html</a>
+  
+    <li class="file"><a href="../../test/dummy/public/422_html.html">422.html</a>
+  
+    <li class="file"><a href="../../test/dummy/public/500_html.html">500.html</a>
+  
+    <li class="file"><a href="../../test/dummy/public/favicon_ico.html">favicon.ico</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="../../ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="../../BingAdsApi.html">BingAdsApi</a>
+  
+    <li><a href="../../BingAdsApi/AccountInfo.html">BingAdsApi::AccountInfo</a>
+  
+    <li><a href="../../BingAdsApi/AccountPerformanceReportRequest.html">BingAdsApi::AccountPerformanceReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/Ad.html">BingAdsApi::Ad</a>
+  
+    <li><a href="../../BingAdsApi/AdApiError.html">BingAdsApi::AdApiError</a>
+  
+    <li><a href="../../BingAdsApi/AdApiFaultDetail.html">BingAdsApi::AdApiFaultDetail</a>
+  
+    <li><a href="../../BingAdsApi/AdGroup.html">BingAdsApi::AdGroup</a>
+  
+    <li><a href="../../BingAdsApi/AdLanguage.html">BingAdsApi::AdLanguage</a>
+  
+    <li><a href="../../BingAdsApi/ApiException.html">BingAdsApi::ApiException</a>
+  
+    <li><a href="../../BingAdsApi/ApiFaultDetail.html">BingAdsApi::ApiFaultDetail</a>
+  
+    <li><a href="../../BingAdsApi/ApplicationFault.html">BingAdsApi::ApplicationFault</a>
+  
+    <li><a href="../../BingAdsApi/BatchError.html">BingAdsApi::BatchError</a>
+  
+    <li><a href="../../BingAdsApi/CallDetailReportRequest.html">BingAdsApi::CallDetailReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/Campaign.html">BingAdsApi::Campaign</a>
+  
+    <li><a href="../../BingAdsApi/CampaignManagement.html">BingAdsApi::CampaignManagement</a>
+  
+    <li><a href="../../BingAdsApi/CampaignPerformanceReportRequest.html">BingAdsApi::CampaignPerformanceReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/ClientProxy.html">BingAdsApi::ClientProxy</a>
+  
+    <li><a href="../../BingAdsApi/Config.html">BingAdsApi::Config</a>
+  
+    <li><a href="../../BingAdsApi/CustomerManagement.html">BingAdsApi::CustomerManagement</a>
+  
+    <li><a href="../../BingAdsApi/DataObject.html">BingAdsApi::DataObject</a>
+  
+    <li><a href="../../BingAdsApi/EditorialError.html">BingAdsApi::EditorialError</a>
+  
+    <li><a href="../../BingAdsApi/Helpers.html">BingAdsApi::Helpers</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/ColumnHelper.html">BingAdsApi::Helpers::ColumnHelper</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/FilterHelper.html">BingAdsApi::Helpers::FilterHelper</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/ScopeHelper.html">BingAdsApi::Helpers::ScopeHelper</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/TimeHelper.html">BingAdsApi::Helpers::TimeHelper</a>
+  
+    <li><a href="../../BingAdsApi/MobileAd.html">BingAdsApi::MobileAd</a>
+  
+    <li><a href="../../BingAdsApi/OperationError.html">BingAdsApi::OperationError</a>
+  
+    <li><a href="../../BingAdsApi/PartialErrors.html">BingAdsApi::PartialErrors</a>
+  
+    <li><a href="../../BingAdsApi/PerformanceReportRequest.html">BingAdsApi::PerformanceReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/ProductAd.html">BingAdsApi::ProductAd</a>
+  
+    <li><a href="../../BingAdsApi/ReportAggregation.html">BingAdsApi::ReportAggregation</a>
+  
+    <li><a href="../../BingAdsApi/ReportFormat.html">BingAdsApi::ReportFormat</a>
+  
+    <li><a href="../../BingAdsApi/ReportLanguage.html">BingAdsApi::ReportLanguage</a>
+  
+    <li><a href="../../BingAdsApi/ReportRequest.html">BingAdsApi::ReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/ReportRequestStatus.html">BingAdsApi::ReportRequestStatus</a>
+  
+    <li><a href="../../BingAdsApi/ReportTimePeriods.html">BingAdsApi::ReportTimePeriods</a>
+  
+    <li><a href="../../BingAdsApi/Reporting.html">BingAdsApi::Reporting</a>
+  
+    <li><a href="../../BingAdsApi/SOAPHasheable.html">BingAdsApi::SOAPHasheable</a>
+  
+    <li><a href="../../BingAdsApi/Service.html">BingAdsApi::Service</a>
+  
+    <li><a href="../../BingAdsApi/TextAd.html">BingAdsApi::TextAd</a>
+  
+    <li><a href="../../BingAdsApi/TimeZone.html">BingAdsApi::TimeZone</a>
+  
+    <li><a href="../../BingAdsApiTest.html">BingAdsApiTest</a>
+  
+    <li><a href="../../CampaignManagementTest.html">CampaignManagementTest</a>
+  
+    <li><a href="../../CustomerManagementTest.html">CustomerManagementTest</a>
+  
+    <li><a href="../../DataObjectTest.html">DataObjectTest</a>
+  
+    <li><a href="../../Dummy.html">Dummy</a>
+  
+    <li><a href="../../Dummy/Application.html">Dummy::Application</a>
+  
+    <li><a href="../../Object.html">Object</a>
+  
+    <li><a href="../../ReportRequestTest.html">ReportRequestTest</a>
+  
+    <li><a href="../../ReportingTest.html">ReportingTest</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>var search_data = {“index”:{“<a
+href="http://"bingadsapi","accountinfo","accountperformancereportrequest","ad","adapierror","adapifaultdetail","adgroup","adlanguage","apiexception","apifaultdetail","applicationfault","batcherror","campaign","campaignmanagement","campaignperformancereportrequest","clientproxy","config","customermanagement","dataobject","editorialerror","helpers","columnhelper","filterhelper","scopehelper","timehelper","mobilead","operationerror","partialerrors","performancereportrequest","productad","reportaggregation","reportformat","reportlanguage","reportrequest","reportrequeststatus","reporttimeperiods","reporting","soaphasheable","service","textad","timezone","active?()","add_ad_groups()","add_ads()","add_campaigns()","call()","call()","columns_to_hash()","date_to_hash()","draft?()","error?()","filter_to_hash()","get_accounts_info()","get_ad_groups_by_campaign_id()","get_ad_groups_by_ids()","get_ads_by_ad_group_id()","get_ads_by_ids()","get_attribute_key()","get_campaigns_by_account_id()","get_response_hash()","hash_instance()","inactive?()","new()","new()","new()","new()","new()","new()","new()","new()","new()","new()","new()","new()","new()","new()","new()","normalize_hash_keys()","object_to_hash()","pause?()","pending?()","pending?()","poll_generate_report()","scope_to_hash()","service_wsdl()","solve_filter_value()","submit_generate_report()","success?()","time_to_hash()","to_hash()","to_hash()","to_hash()","to_hash()","to_hash()","to_hash()","to_hash()","to_hash()","to_hash()","to_s()","to_s()","to_s()","to_s()","to_s()","to_s()","to_s()","to_s()","to_s()","update_ad_groups()","update_ads()","update_campaigns()","valid_columns()","valid_filter()","valid_filter_value()","valid_scope()","valid_time()","readme"">searchIndex”:</a>,“<a
+href=""bingadsapi","bingadsapi::accountinfo","bingadsapi::accountperformancereportrequest","bingadsapi::ad","bingadsapi::adapierror","bingadsapi::adapifaultdetail","bingadsapi::adgroup","bingadsapi::adlanguage","bingadsapi::apiexception","bingadsapi::apifaultdetail","bingadsapi::applicationfault","bingadsapi::batcherror","bingadsapi::campaign","bingadsapi::campaignmanagement","bingadsapi::campaignperformancereportrequest","bingadsapi::clientproxy","bingadsapi::config","bingadsapi::customermanagement","bingadsapi::dataobject","bingadsapi::editorialerror","bingadsapi::helpers","bingadsapi::helpers::columnhelper","bingadsapi::helpers::filterhelper","bingadsapi::helpers::scopehelper","bingadsapi::helpers::timehelper","bingadsapi::mobilead","bingadsapi::operationerror","bingadsapi::partialerrors","bingadsapi::performancereportrequest","bingadsapi::productad","bingadsapi::reportaggregation","bingadsapi::reportformat","bingadsapi::reportlanguage","bingadsapi::reportrequest","bingadsapi::reportrequeststatus","bingadsapi::reporttimeperiods","bingadsapi::reporting","bingadsapi::soaphasheable","bingadsapi::service","bingadsapi::textad","bingadsapi::timezone","bingadsapi::accountinfo#active?()","bingadsapi::campaignmanagement#add_ad_groups()","bingadsapi::campaignmanagement#add_ads()","bingadsapi::campaignmanagement#add_campaigns()","bingadsapi::clientproxy#call()","bingadsapi::service#call()","bingadsapi::helpers::columnhelper#columns_to_hash()","bingadsapi::soaphasheable#date_to_hash()","bingadsapi::accountinfo#draft?()","bingadsapi::reportrequeststatus#error?()","bingadsapi::helpers::filterhelper#filter_to_hash()","bingadsapi::customermanagement#get_accounts_info()","bingadsapi::campaignmanagement#get_ad_groups_by_campaign_id()","bingadsapi::campaignmanagement#get_ad_groups_by_ids()","bingadsapi::campaignmanagement#get_ads_by_ad_group_id()","bingadsapi::campaignmanagement#get_ads_by_ids()","bingadsapi::soaphasheable#get_attribute_key()","bingadsapi::campaignmanagement#get_campaigns_by_account_id()","bingadsapi::service#get_response_hash()","bingadsapi::config::hash_instance()","bingadsapi::accountinfo#inactive?()","bingadsapi::accountperformancereportrequest::new()","bingadsapi::adapifaultdetail::new()","bingadsapi::adgroup::new()","bingadsapi::apiexception::new()","bingadsapi::apifaultdetail::new()","bingadsapi::campaignmanagement::new()","bingadsapi::campaignperformancereportrequest::new()","bingadsapi::clientproxy::new()","bingadsapi::config::new()","bingadsapi::customermanagement::new()","bingadsapi::dataobject::new()","bingadsapi::partialerrors::new()","bingadsapi::performancereportrequest::new()","bingadsapi::reportrequest::new()","bingadsapi::service::new()","bingadsapi::soaphasheable#normalize_hash_keys()","bingadsapi::soaphasheable#object_to_hash()","bingadsapi::accountinfo#pause?()","bingadsapi::accountinfo#pending?()","bingadsapi::reportrequeststatus#pending?()","bingadsapi::reporting#poll_generate_report()","bingadsapi::helpers::scopehelper#scope_to_hash()","bingadsapi::config#service_wsdl()","bingadsapi::helpers::filterhelper#solve_filter_value()","bingadsapi::reporting#submit_generate_report()","bingadsapi::reportrequeststatus#success?()","bingadsapi::helpers::timehelper#time_to_hash()","bingadsapi::accountperformancereportrequest#to_hash()","bingadsapi::adgroup#to_hash()","bingadsapi::campaignperformancereportrequest#to_hash()","bingadsapi::mobilead#to_hash()","bingadsapi::performancereportrequest#to_hash()","bingadsapi::productad#to_hash()","bingadsapi::reportrequest#to_hash()","bingadsapi::soaphasheable#to_hash()","bingadsapi::textad#to_hash()","bingadsapi::adapifaultdetail#to_s()","bingadsapi::apiexception#to_s()","bingadsapi::apifaultdetail#to_s()","bingadsapi::applicationfault#to_s()","bingadsapi::batcherror#to_s()","bingadsapi::dataobject#to_s()","bingadsapi::editorialerror#to_s()","bingadsapi::operationerror#to_s()","bingadsapi::partialerrors#to_s()","bingadsapi::campaignmanagement#update_ad_groups()","bingadsapi::campaignmanagement#update_ads()","bingadsapi::campaignmanagement#update_campaigns()","bingadsapi::helpers::columnhelper#valid_columns()","bingadsapi::helpers::filterhelper#valid_filter()","bingadsapi::helpers::filterhelper#valid_filter_value()","bingadsapi::helpers::scopehelper#valid_scope()","bingadsapi::helpers::timehelper#valid_time()",""">longSearchIndex”:</a>,“info”:[[“BingAdsApi”,“”,“BingAdsApi.html”,“”,“&lt;p&gt;Public
+: This is the main namespace for all classes and submodules in
+thisnBingAdsApi Gemn&lt;p&gt;Author &amp;mdash; jlopezn@
+…nn”],[“BingAdsApi::AccountInfo”,“”,“BingAdsApi/AccountInfo.html”,“”,“&lt;p&gt;Public
+: Define an account infon&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Examplesn”],[“BingAdsApi::AccountPerformanceReportRequest”,“”,“BingAdsApi/AccountPerformanceReportRequest.html”,“”,“&lt;p&gt;Public
+: Defines the base object for all report requests. Do notninstantiate this
+object. Instead, you
+…n”],[“BingAdsApi::Ad”,“”,“BingAdsApi/Ad.html”,“”,“&lt;p&gt;Public :
+Defines the base object of an ad.  Do not instantiate this object.nInstead
+you can instantiate
+…n”],[“BingAdsApi::AdApiError”,“”,“BingAdsApi/AdApiError.html”,“”,“&lt;p&gt;Public
+: Defines an error object that contains the details that explain whynthe
+service operation failed.
+…n”],[“BingAdsApi::AdApiFaultDetail”,“”,“BingAdsApi/AdApiFaultDetail.html”,“”,“&lt;p&gt;Public
+: Defines a fault object that operations return when generic errorsnoccur, 
+such as an authentication
+…n”],[“BingAdsApi::AdGroup”,“”,“BingAdsApi/AdGroup.html”,“”,“&lt;p&gt;Public
+: Defines an ad group.n&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Examplesn”],[“BingAdsApi::AdLanguage”,“”,“BingAdsApi/AdLanguage.html”,“”,“&lt;p&gt;Public
+: Utility class for AdLanguages valuesn&lt;p&gt;Examplenn&lt;pre
+class=&quot;ruby&quot;&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;AdLanguages&lt;/span&gt;.&lt;span
+class=&quot;ruby-constant&quot;&gt;SPANISH&lt;/span&gt;n&lt;span
+class=&quot;ruby-comment&quot;&gt;# =&amp;gt;
+&#39;Spanish&#39;&lt;/span&gt;n&lt;span
+class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;AdLanguages&lt;/span&gt;.&lt;span
+class=&quot;ruby-constant&quot;&gt;SPANISH_CODE&lt;/span&gt; &lt;span
+class=&quot;ruby-operator&quot;&gt;…&lt;/span&gt;n&lt;/pre&gt;n”],[“BingAdsApi::ApiException”,“”,“BingAdsApi/ApiException.html”,“”,“&lt;p&gt;Public
+: Generic exception thrown by service classes in <a
+href="../../BingAdsApi.html">BingAdsApi</a>.nn&lt;pre&gt;Exception of this
+kind wrap an AdApiFaultDetail
+…&lt;/pre&gt;n”],[“BingAdsApi::ApiFaultDetail”,“”,“BingAdsApi/ApiFaultDetail.html”,“”,“&lt;p&gt;Public
+: Defines a fault object that operations return when webnservice-specific
+errors occur,  such
+…n”],[“BingAdsApi::ApplicationFault”,“”,“BingAdsApi/ApplicationFault.html”,“”,“&lt;p&gt;Public
+: Defines the base object from which all fault detail
+objectsnderive.n&lt;p&gt;Reference:nmsdn.microsoft.com/en-US/library/bing-ads-overview-applicationfault.aspx
+…n”],[“BingAdsApi::BatchError”,“”,“BingAdsApi/BatchError.html”,“”,“&lt;p&gt;Public
+: Defines an error object that identifies the item within the batchnof
+items  in the request message
+…n”],[“BingAdsApi::Campaign”,“”,“BingAdsApi/Campaign.html”,“”,“&lt;p&gt;Public
+: Define a campaignn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Examplesn”],[“BingAdsApi::CampaignManagement”,“”,“BingAdsApi/CampaignManagement.html”,“”,“&lt;p&gt;Public
+: This class represents the Campaign Management Services  defined innthe
+Bing Ads API, to manage
+…n”],[“BingAdsApi::CampaignPerformanceReportRequest”,“”,“BingAdsApi/CampaignPerformanceReportRequest.html”,“”,“&lt;p&gt;Public
+: Defines the base object for all report requests. Do notninstantiate this
+object. Instead, you
+…n”],[“BingAdsApi::ClientProxy”,“”,“BingAdsApi/ClientProxy.html”,“”,“&lt;p&gt;Public
+: ClientProxy es un objeto para encapsular la conexión y
+requestnn&lt;pre&gt;de servicios a la API de Bing.
+…&lt;/pre&gt;n”],[“BingAdsApi::Config”,“”,“BingAdsApi/Config.html”,“”,“&lt;p&gt;Public
+: Helper class for configuration issues like WSDL URLs and
+constantsn&lt;p&gt;Author &amp;mdash; author@neonline.cl
+…nn”],[“BingAdsApi::CustomerManagement”,“”,“BingAdsApi/CustomerManagement.html”,“”,“&lt;p&gt;Public
+: This class represents the Customer Management Services  defined innthe
+Bing Ads API, to manage
+…n”],[“BingAdsApi::DataObject”,“”,“BingAdsApi/DataObject.html”,“”,“&lt;p&gt;Public
+: Base Class to define Bing API data objects Do not use this
+classndirectly, use any of the derived
+…n”],[“BingAdsApi::EditorialError”,“”,“BingAdsApi/EditorialError.html”,“”,“&lt;p&gt;Public
+: Subclass of BatchError present in AdAdds operations  Defines annerror
+object that identifies …<a
+href=”“BingAdsApi::Helpers”,“”,“BingAdsApi/Helpers.html”,“”,“”“>n”],</a>,[“BingAdsApi::Helpers::ColumnHelper”,“”,“BingAdsApi/Helpers/ColumnHelper.html”,“”,“&lt;p&gt;Public
+: Utility modulen&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“BingAdsApi::Helpers::FilterHelper”,“”,“BingAdsApi/Helpers/FilterHelper.html”,“”,“&lt;p&gt;Public
+: Utility module for filter attribute in <code>ReportRequest</code>nderived
+classesn&lt;p&gt;Author &amp;mdash; jlopezn@neonline.cl
+…nn”],[“BingAdsApi::Helpers::ScopeHelper”,“”,“BingAdsApi/Helpers/ScopeHelper.html”,“”,“&lt;p&gt;Public
+: Utility module for scope attribute in <code>ReportRequest</code>nderived
+classesn&lt;p&gt;Author &amp;mdash; jlopezn@neonline.cl
+…nn”],[“BingAdsApi::Helpers::TimeHelper”,“”,“BingAdsApi/Helpers/TimeHelper.html”,“”,“&lt;p&gt;Public
+: Utility modulen&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“BingAdsApi::MobileAd”,“”,“BingAdsApi/MobileAd.html”,“”,“&lt;p&gt;Public
+: Defines a mobile ad. A mobile ad is displayed to a user  when thenad is
+viewed on a low-fi mobile
+…n”],[“BingAdsApi::OperationError”,“”,“BingAdsApi/OperationError.html”,“”,“&lt;p&gt;Public
+: Defines an error object that contains the details that explain whynthe
+service operation failed.
+…n”],[“BingAdsApi::PartialErrors”,“”,“BingAdsApi/PartialErrors.html”,“”,“&lt;p&gt;Public
+: Defines an array of error that occur when adding adsn&lt;p&gt;Author
+&amp;mdash;
+jlopezn@neonline.clnn”],[“BingAdsApi::PerformanceReportRequest”,“”,“BingAdsApi/PerformanceReportRequest.html”,“”,“&lt;p&gt;Public
+: Defines the base class for ‘performance report requests’. Do
+notninstantiate this object. Instead
+…n”],[“BingAdsApi::ProductAd”,“”,“BingAdsApi/ProductAd.html”,“”,“&lt;p&gt;Public
+: Defines a product
+ad.n&lt;p&gt;Reference:nmsdn.microsoft.com/en-US/library/bing-ads-productad-campaign-management.aspxn…n”],[“BingAdsApi::ReportAggregation”,“”,“BingAdsApi/ReportAggregation.html”,“”,“&lt;p&gt;Public
+: Module for Reporting languagesn&lt;p&gt;Examplenn&lt;pre
+class=&quot;ruby&quot;&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;ReportAggregation&lt;/span&gt;.&lt;span
+class=&quot;ruby-constant&quot;&gt;SUMMARY&lt;/span&gt;n&lt;span
+class=&quot;ruby-comment&quot;&gt;# =&amp;gt;
+&#39;Summary&#39;&lt;/span&gt;n&lt;span
+class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;ReportAggregation&lt;/span&gt;.&lt;span
+class=&quot;ruby-constant&quot;&gt;HOURLY&lt;/span&gt; &lt;span
+class=&quot;ruby-operator&quot;&gt;…&lt;/span&gt;n&lt;/pre&gt;n”],[“BingAdsApi::ReportFormat”,“”,“BingAdsApi/ReportFormat.html”,“”,“&lt;p&gt;Public
+: Module for Reporting formatsn&lt;p&gt;Examplenn&lt;pre
+class=&quot;ruby&quot;&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;ReportFormat&lt;/span&gt;.&lt;span
+class=&quot;ruby-constant&quot;&gt;CSV&lt;/span&gt;n&lt;span
+class=&quot;ruby-comment&quot;&gt;# =&amp;gt;
+&#39;Csv&#39;&lt;/span&gt;n&lt;/pre&gt;n”],[“BingAdsApi::ReportLanguage”,“”,“BingAdsApi/ReportLanguage.html”,“”,“&lt;p&gt;Public
+: Module for Reporting languagesn&lt;p&gt;Examplenn&lt;pre
+class=&quot;ruby&quot;&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;ReportLanguage&lt;/span&gt;.&lt;span
+class=&quot;ruby-constant&quot;&gt;ENGLISH&lt;/span&gt;n&lt;span
+class=&quot;ruby-comment&quot;&gt;# =&amp;gt;
+&#39;English&#39;&lt;/span&gt;n&lt;/pre&gt;n”],[“BingAdsApi::ReportRequest”,“”,“BingAdsApi/ReportRequest.html”,“”,“&lt;p&gt;Public
+: Defines the base object for all report requests. Do notninstantiate this
+object. Instead, you
+…n”],[“BingAdsApi::ReportRequestStatus”,“”,“BingAdsApi/ReportRequestStatus.html”,“”,“&lt;p&gt;Public
+: Defines the status of a report
+request.n&lt;p&gt;Reference:nmsdn.microsoft.com/en-US/library/bing-ads-reporting-bing-ads-reportrequeststatus.aspxn…n”],[“BingAdsApi::ReportTimePeriods”,“”,“BingAdsApi/ReportTimePeriods.html”,“”,“&lt;p&gt;Public
+: Module for Reporting languagesn&lt;p&gt;Examplenn&lt;pre
+class=&quot;ruby&quot;&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;ReportTimePeriods&lt;/span&gt;.&lt;span
+class=&quot;ruby-constant&quot;&gt;TODAY&lt;/span&gt;n&lt;span
+class=&quot;ruby-comment&quot;&gt;# =&amp;gt;
+&#39;Today&#39;&lt;/span&gt;n&lt;span
+class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;ReportTimePeriods&lt;/span&gt;.&lt;span
+class=&quot;ruby-constant&quot;&gt;LAST_WEEK&lt;/span&gt; &lt;span
+class=&quot;ruby-operator&quot;&gt;…&lt;/span&gt;n&lt;/pre&gt;n”],[“BingAdsApi::Reporting”,“”,“BingAdsApi/Reporting.html”,“”,“&lt;p&gt;Public
+: This class represents the Reporting Services  defined in the BingnAds
+API, to request and download
+…n”],[“BingAdsApi::SOAPHasheable”,“”,“BingAdsApi/SOAPHasheable.html”,“”,“&lt;p&gt;Public
+&amp;mdash; Module to define an object as Hasheable for the SOAP
+requestsn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“BingAdsApi::Service”,“”,“BingAdsApi/Service.html”,“”,“&lt;p&gt;Public
+: Base class for service objectn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“BingAdsApi::TextAd”,“”,“BingAdsApi/TextAd.html”,“”,“&lt;p&gt;Public
+: Defines a text
+ad.n&lt;p&gt;Reference:nmsdn.microsoft.com/en-US/library/bing-ads-campaign-management-textad.aspx
+…n”],[“BingAdsApi::TimeZone”,“”,“BingAdsApi/TimeZone.html”,“”,“&lt;p&gt;Public
+: Utility class for TimeZones valuesn&lt;p&gt;Examplenn&lt;pre
+class=&quot;ruby&quot;&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span
+class=&quot;ruby-constant&quot;&gt;TimeZone&lt;/span&gt;.&lt;span
+class=&quot;ruby-constant&quot;&gt;SANTIAGO&lt;/span&gt;n&lt;span
+class=&quot;ruby-comment&quot;&gt;# =&amp;gt;
+&#39;Santiago&#39;&lt;/span&gt;n&lt;/pre&gt;n”],[“active?”,“BingAdsApi::AccountInfo”,“BingAdsApi/AccountInfo.html#method-i-active-3F”,“()”,“&lt;p&gt;Public
+&amp;mdash; Returns true if the account is in status activen&lt;p&gt;Author
+&amp;mdash; jlopezn@neonline.cln&lt;p&gt;Returns &amp;mdash;
+booleann”],[“add_ad_groups”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-add_ad_groups”,“(campaign_id,
+ad_groups)”,“&lt;p&gt;Public : Adds 1 or more AdGroups to a
+Campaignn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“add_ads”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-add_ads”,“(ad_group_id,
+ads)”,“&lt;p&gt;Public : Add ads into a specified ad groupn&lt;p&gt;Author
+&amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“add_campaigns”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-add_campaigns”,“(account_id,
+campaigns)”,“&lt;p&gt;Public : Adds a campaign to the specified
+accountn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“call”,“BingAdsApi::ClientProxy”,“BingAdsApi/ClientProxy.html#method-i-call”,“(service_name,
+message, options={})”,“&lt;p&gt;Public : Delegate for Savon::Client.call
+methodn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“call”,“BingAdsApi::Service”,“BingAdsApi/Service.html#method-i-call”,“(operation,
+message, &amp;block)”,“&lt;p&gt;Public : This is a utility wrapper for
+calling services into the n<code>ClientProxy</code>. This methods handle
+all
+…n”],[“columns_to_hash”,“BingAdsApi::Helpers::ColumnHelper”,“BingAdsApi/Helpers/ColumnHelper.html#method-i-columns_to_hash”,“(valid_columns,
+columns, keys_case=:underscore)”,“&lt;p&gt;Public : Return the columns
+attribute of the ReportRequest as a valid Hashnfor SOAP
+requestsn&lt;p&gt;Author &amp;mdash;
+”],[“date_to_hash”,“BingAdsApi::SOAPHasheable”,“BingAdsApi/SOAPHasheable.html#method-i-date_to_hash”,“(date,
+keys_case)”,“&lt;p&gt;Internal : Returns a DateTime as a hash for SOAP
+requestsn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“draft?”,“BingAdsApi::AccountInfo”,“BingAdsApi/AccountInfo.html#method-i-draft-3F”,“()”,“&lt;p&gt;Public
+&amp;mdash; Returns true if the account is in status draftn&lt;p&gt;Author
+&amp;mdash; jlopezn@neonline.cln&lt;p&gt;Returns &amp;mdash;
+booleann”],[“error?”,“BingAdsApi::ReportRequestStatus”,“BingAdsApi/ReportRequestStatus.html#method-i-error-3F”,“()”,“&lt;p&gt;Public
+&amp;mdash; Returns true if the status is errorn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.cln&lt;p&gt;Returns &amp;mdash;
+booleann”],[“filter_to_hash”,“BingAdsApi::Helpers::FilterHelper”,“BingAdsApi/Helpers/FilterHelper.html#method-i-filter_to_hash”,“(valid_filters,
+keys_case=:undescore)”,“&lt;p&gt;Public : Returns the filter attribute as a
+Hash to SOAP requestsn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;filter -
+…n”],[“get_accounts_info”,“BingAdsApi::CustomerManagement”,“BingAdsApi/CustomerManagement.html#method-i-get_accounts_info”,“(customer_id=nil,
+only_parent_accounts=false)”,“&lt;p&gt;Public : Gets a list of objects that
+contains account identificationninformation,  for example the name
+…n”],[“get_ad_groups_by_campaign_id”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-get_ad_groups_by_campaign_id”,“(campaign_id)”,“&lt;p&gt;Public
+: Returns all the ad groups that belongs to the  specified
+campaignn&lt;p&gt;Author &amp;mdash; jlopezn@neonline.cl
+…nn”],[“get_ad_groups_by_ids”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-get_ad_groups_by_ids”,“(campaign_id,
+ad_groups_ids)”,“&lt;p&gt;Public : Returns the specified ad groups that
+belongs to the  specifiedncampaignn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.cl
+…nn”],[“get_ads_by_ad_group_id”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-get_ads_by_ad_group_id”,“(ad_group_id)”,“&lt;p&gt;Public
+: Obtains all the ads associated to the specified ad groupn&lt;p&gt;Author
+&amp;mdash; jlopezn@neonline.clnn&lt;p&gt;Parameters
+…n”],[“get_ads_by_ids”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-get_ads_by_ids”,“(ad_group_id,
+ad_ids)”,“&lt;p&gt;Public : Obtains the ads indicated in ad_ids associated
+to the specified adngroupn&lt;p&gt;Author &amp;mdash; jlopezn@neonline.cl
+…nn”],[“get_attribute_key”,“BingAdsApi::SOAPHasheable”,“BingAdsApi/SOAPHasheable.html#method-i-get_attribute_key”,“(attribute,
+keys_case = :underscore)”,“&lt;p&gt;Internal : Helper method to determinate
+the key name in the hash for thenSOAP requestn&lt;p&gt;Author &amp;mdash;
+jlopezn@
+…nn”],[“get_campaigns_by_account_id”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-get_campaigns_by_account_id”,“(account_id)”,“&lt;p&gt;Public
+: Returns all the campaigns found in the specified accountn&lt;p&gt;Author
+&amp;mdash; jlopezn@neonline.clnn&lt;p&gt;Parameters
+…n”],[“get_response_hash”,“BingAdsApi::Service”,“BingAdsApi/Service.html#method-i-get_response_hash”,“(response,
+method)”,“&lt;p&gt;Public : Extracts the actual response from the entire
+response hash.  Fornexample, if you specify ‘AddCampaigns’,
+…n”],[“hash_instance”,“BingAdsApi::Config”,“BingAdsApi/Config.html#method-c-hash_instance”,“()”,“&lt;p&gt;Public
+: Returns the config file as an Hash instancen&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.cln&lt;p&gt;Returns &amp;mdash;
+Hashn”],[“inactive?”,“BingAdsApi::AccountInfo”,“BingAdsApi/AccountInfo.html#method-i-inactive-3F”,“()”,“&lt;p&gt;Public
+&amp;mdash; Returns true if the account is in status
+inactiven&lt;p&gt;Author &amp;mdash; jlopezn@neonline.cln&lt;p&gt;Returns
+&amp;mdash;
+booleann”],[“new”,“BingAdsApi::AccountPerformanceReportRequest”,“BingAdsApi/AccountPerformanceReportRequest.html#method-c-new”,“(attributes={})”,“&lt;p&gt;Public
+: Constructor. Adds a validations for the columns, filter  and
+scopenattributesn&lt;p&gt;Author &amp;mdash; jlopezn@
+…nn”],[“new”,“BingAdsApi::AdApiFaultDetail”,“BingAdsApi/AdApiFaultDetail.html#method-c-new”,“(attributes={})”,“&lt;p&gt;Public
+: Constructorn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;attributes - Hash with the initial
+attributesn”],[“new”,“BingAdsApi::AdGroup”,“BingAdsApi/AdGroup.html#method-c-new”,“(attributes={})”,“&lt;p&gt;Public
+: Constructor in a ActiveRecord style, with a hash of attributes
+asninputn&lt;p&gt;Author &amp;mdash; jlopezn@neonline.cl
+…nn”],[“new”,“BingAdsApi::ApiException”,“BingAdsApi/ApiException.html#method-c-new”,“(fault_object,
+msg=nil)”,“&lt;p&gt;Public : Constructor. Based on the default Exception
+constructor,  adds thenfault_object instance, that
+…n”],[“new”,“BingAdsApi::ApiFaultDetail”,“BingAdsApi/ApiFaultDetail.html#method-c-new”,“(attributes={})”,“&lt;p&gt;Public
+: Constructorn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;attributes - Hash with the initial
+attributesn”],[“new”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-c-new”,“(options={})”,“&lt;p&gt;Public
+: Constructorn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;options - Hash with the parameters for the
+client proxy
+…n”],[“new”,“BingAdsApi::CampaignPerformanceReportRequest”,“BingAdsApi/CampaignPerformanceReportRequest.html#method-c-new”,“(attributes={})”,“&lt;p&gt;Public
+: Constructor. Adds a validations for the columns, filter  and
+scopenattributesn&lt;p&gt;Author &amp;mdash; jlopezn@
+…nn”],[“new”,“BingAdsApi::ClientProxy”,“BingAdsApi/ClientProxy.html#method-c-new”,“(options=nil)”,“&lt;p&gt;Public
+: Constructorn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“new”,“BingAdsApi::Config”,“BingAdsApi/Config.html#method-c-new”,“()”,“&lt;p&gt;Public
+: Constructorn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“new”,“BingAdsApi::CustomerManagement”,“BingAdsApi/CustomerManagement.html#method-c-new”,“(options={})”,“&lt;p&gt;Public
+: Constructorn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;options - Hash with the parameters for the
+client proxy
+…n”],[“new”,“BingAdsApi::DataObject”,“BingAdsApi/DataObject.html#method-c-new”,“(attributes={})”,“&lt;p&gt;Public
+: Constructor in a ActiveRecord style, with a hash of attributes
+asninputn&lt;p&gt;Author &amp;mdash; jlopezn@neonline.cl
+…nn”],[“new”,“BingAdsApi::PartialErrors”,“BingAdsApi/PartialErrors.html#method-c-new”,“(attributes={})”,“&lt;p&gt;Public
+: Constructorn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;attributes - Hash with the initial
+attributesn”],[“new”,“BingAdsApi::PerformanceReportRequest”,“BingAdsApi/PerformanceReportRequest.html#method-c-new”,“(attributes={})”,“&lt;p&gt;Public
+: Constructor. Adds validations to aggregations and timen&lt;p&gt;Author
+&amp;mdash; jlopezn@neonline.clnn&lt;p&gt;Parameters
+…n”],[“new”,“BingAdsApi::ReportRequest”,“BingAdsApi/ReportRequest.html#method-c-new”,“(attributes={})”,“&lt;p&gt;Public
+: Constructor. Adds validations to format and language
+attributesn&lt;p&gt;Author &amp;mdash; jlopezn@neonline.cl 
+…nn”],[“new”,“BingAdsApi::Service”,“BingAdsApi/Service.html#method-c-new”,“(options={})”,“&lt;p&gt;Public
+: Constructorn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“normalize_hash_keys”,“BingAdsApi::SOAPHasheable”,“BingAdsApi/SOAPHasheable.html#method-i-normalize_hash_keys”,“(hash,
+keys_case)”,“&lt;p&gt;Public &amp;mdash; Normalize the keys of a hash with
+the case specifiedn&lt;p&gt;Author &amp;mdash;
+jlopexn@neonline.clnn&lt;p&gt;Parametersn”],[“object_to_hash”,“BingAdsApi::SOAPHasheable”,“BingAdsApi/SOAPHasheable.html#method-i-object_to_hash”,“(object,
+keys_case=:underscore)”,“&lt;p&gt;Internal: Internal method to return an
+object as a SOAP Request alike hashnIf the object is an array,
+…n”],[“pause?”,“BingAdsApi::AccountInfo”,“BingAdsApi/AccountInfo.html#method-i-pause-3F”,“()”,“&lt;p&gt;Public
+&amp;mdash; Returns true if the account is in status pausen&lt;p&gt;Author
+&amp;mdash; jlopezn@neonline.cln&lt;p&gt;Returns &amp;mdash;
+booleann”],[“pending?”,“BingAdsApi::AccountInfo”,“BingAdsApi/AccountInfo.html#method-i-pending-3F”,“()”,“&lt;p&gt;Public
+&amp;mdash; Returns true if the account is in status
+pendingn&lt;p&gt;Author &amp;mdash; jlopezn@neonline.cln&lt;p&gt;Returns
+&amp;mdash;
+booleann”],[“pending?”,“BingAdsApi::ReportRequestStatus”,“BingAdsApi/ReportRequestStatus.html#method-i-pending-3F”,“()”,“&lt;p&gt;Public
+&amp;mdash; Returns true if the status is pendingn&lt;p&gt;Author
+&amp;mdash; jlopezn@neonline.cln&lt;p&gt;Returns &amp;mdash;
+booleann”],[“poll_generate_report”,“BingAdsApi::Reporting”,“BingAdsApi/Reporting.html#method-i-poll_generate_report”,“(report_request_id)”,“&lt;p&gt;Public
+: Get the status of a report requestn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“scope_to_hash”,“BingAdsApi::Helpers::ScopeHelper”,“BingAdsApi/Helpers/ScopeHelper.html#method-i-scope_to_hash”,“(keys_case=:undescore)”,“&lt;p&gt;Public
+: Returns the filter attribute as a Hash to SOAP requestsn&lt;p&gt;Author
+&amp;mdash; jlopezn@neonline.clnn&lt;p&gt;filter -
+…n”],[“service_wsdl”,“BingAdsApi::Config”,“BingAdsApi/Config.html#method-i-service_wsdl”,“(environment,
+service)”,“&lt;p&gt;Public : Returns a String with WSDL url for the service
+indicatedn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parameters
+…n”],[“solve_filter_value”,“BingAdsApi::Helpers::FilterHelper”,“BingAdsApi/Helpers/FilterHelper.html#method-i-solve_filter_value”,“(filter_criteria,
+filter_value)”,“&lt;p&gt;Internal &amp;mdash; Solves the Bing value for the
+given filter attributen&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“submit_generate_report”,“BingAdsApi::Reporting”,“BingAdsApi/Reporting.html#method-i-submit_generate_report”,“(report_request)”,“&lt;p&gt;Public
+: Submits a report requestn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“success?”,“BingAdsApi::ReportRequestStatus”,“BingAdsApi/ReportRequestStatus.html#method-i-success-3F”,“()”,“&lt;p&gt;Public
+&amp;mdash; Returns true if the status is successn&lt;p&gt;Author
+&amp;mdash; jlopezn@neonline.cln&lt;p&gt;Returns &amp;mdash;
+booleann”],[“time_to_hash”,“BingAdsApi::Helpers::TimeHelper”,“BingAdsApi/Helpers/TimeHelper.html#method-i-time_to_hash”,“(keys_case)”,“&lt;p&gt;Public
+: Return the time attribute of the ReportRequest as a valid Hash fornSOAP
+requestsn&lt;p&gt;Author &amp;mdash; jlopezn@
+…nn”],[“to_hash”,“BingAdsApi::AccountPerformanceReportRequest”,“BingAdsApi/AccountPerformanceReportRequest.html#method-i-to_hash”,“(keys
+= :underscore)”,“&lt;p&gt;Public &amp;mdash; Returns the object as a Hash
+valid for SOAP requestsn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“to_hash”,“BingAdsApi::AdGroup”,“BingAdsApi/AdGroup.html#method-i-to_hash”,“(keys
+= :underscore)”,“&lt;p&gt;Public : Returns this object as a hash to SOAP
+requests  This methods is anspecialization for the +DataObject#to_hash
+…n”],[“to_hash”,“BingAdsApi::CampaignPerformanceReportRequest”,“BingAdsApi/CampaignPerformanceReportRequest.html#method-i-to_hash”,“(keys
+= :underscore)”,“&lt;p&gt;Public &amp;mdash; Returns the object as a Hash
+valid for SOAP requestsn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“to_hash”,“BingAdsApi::MobileAd”,“BingAdsApi/MobileAd.html#method-i-to_hash”,“(keys
+= :underscore)”,“&lt;p&gt;Public : Specification of DataObject#to_hash
+method that ads the typenattribute based on this specific
+…n”],[“to_hash”,“BingAdsApi::PerformanceReportRequest”,“BingAdsApi/PerformanceReportRequest.html#method-i-to_hash”,“(keys_case
+= :underscore)”,“&lt;p&gt;Public &amp;mdash; Returns this object as a Hash
+for SOAP Requestsn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“to_hash”,“BingAdsApi::ProductAd”,“BingAdsApi/ProductAd.html#method-i-to_hash”,“(keys
+= :underscore)”,“&lt;p&gt;Public : Specification of DataObject#to_hash
+method that ads the typenattribute based on this specific
+…n”],[“to_hash”,“BingAdsApi::ReportRequest”,“BingAdsApi/ReportRequest.html#method-i-to_hash”,“(keys_case
+= :underscore)”,“&lt;p&gt;Public &amp;mdash; Returns this object as a Hash
+for SOAP Requestsn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“to_hash”,“BingAdsApi::SOAPHasheable”,“BingAdsApi/SOAPHasheable.html#method-i-to_hash”,“(keys_case=:underscore)”,“&lt;p&gt;Internal:
+Metodo custom para transformar a hash un objeto. Se puede indicarnsi se
+desean las keys en
+…n”],[“to_hash”,“BingAdsApi::TextAd”,“BingAdsApi/TextAd.html#method-i-to_hash”,“(keys
+= :underscore)”,“&lt;p&gt;Public : Specification of DataObject#to_hash
+method that ads the typenattribute based on this specific
+…n”],[“to_s”,“BingAdsApi::AdApiFaultDetail”,“BingAdsApi/AdApiFaultDetail.html#method-i-to_s”,“()”,“&lt;p&gt;Public
+: Specified to string methodn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“to_s”,“BingAdsApi::ApiException”,“BingAdsApi/ApiException.html#method-i-to_s”,“()”,“&lt;p&gt;Public
+: Specified to string methodn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“to_s”,“BingAdsApi::ApiFaultDetail”,“BingAdsApi/ApiFaultDetail.html#method-i-to_s”,“()”,“&lt;p&gt;Public
+: Specific to stringn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.cln&lt;p&gt;Returns &amp;mdash; the object ‘<a
+href=""to_s","BingAdsApi::ApplicationFault","BingAdsApi/ApplicationFault.html#method-i-to_s","()",""">stringified’n”],</a>,[“to_s”,“BingAdsApi::BatchError”,“BingAdsApi/BatchError.html#method-i-to_s”,“()”,“&lt;p&gt;Public
+: Specified to string methodn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“to_s”,“BingAdsApi::DataObject”,“BingAdsApi/DataObject.html#method-i-to_s”,“()”,“&lt;p&gt;Public
+: Specified to string methodn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“to_s”,“BingAdsApi::EditorialError”,“BingAdsApi/EditorialError.html#method-i-to_s”,“()”,“&lt;p&gt;Public
+: Specified to string methodn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“to_s”,“BingAdsApi::OperationError”,“BingAdsApi/OperationError.html#method-i-to_s”,“()”,“&lt;p&gt;Public
+: Specified to string methodn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“to_s”,“BingAdsApi::PartialErrors”,“BingAdsApi/PartialErrors.html#method-i-to_s”,“()”,“&lt;p&gt;Public
+: Specified to string methodn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn”],[“update_ad_groups”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-update_ad_groups”,“(campaign_id,
+ad_groups)”,“&lt;p&gt;Public : Updates on or more ad groups in a specified
+campaignn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“update_ads”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-update_ads”,“(ad_group_id,
+ads)”,“&lt;p&gt;Public : Updates ads for the specified ad
+groupn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parametersn”],[“update_campaigns”,“BingAdsApi::CampaignManagement”,“BingAdsApi/CampaignManagement.html#method-i-update_campaigns”,“(account_id,
+campaigns)”,“&lt;p&gt;Public : Updates on or more campaigns for the
+specified accountn&lt;p&gt;Author &amp;mdash;
+jlopezn@neonline.clnn&lt;p&gt;Parameters
+…n”],[“valid_columns”,“BingAdsApi::Helpers::ColumnHelper”,“BingAdsApi/Helpers/ColumnHelper.html#method-i-valid_columns”,“(valid_columns,
+columns)”,“&lt;p&gt;Internal : Validates the specified columns at the
+ReporRequestninitialization At the first invalid column
+…n”],[“valid_filter”,“BingAdsApi::Helpers::FilterHelper”,“BingAdsApi/Helpers/FilterHelper.html#method-i-valid_filter”,“(valid_filters,
+filter)”,“&lt;p&gt;Internal : Validates the filter attribute at the
+ReporRequestninitialization At the first invalid filter
+…n”],[“valid_filter_value”,“BingAdsApi::Helpers::FilterHelper”,“BingAdsApi/Helpers/FilterHelper.html#method-i-valid_filter_value”,“(key,
+value)”,“&lt;p&gt;Internal : Validates a specific filter criteria and his
+valuen&lt;p&gt;Author &amp;mdash; jlopezn@neonline.clnn&lt;p&gt;key -
+filter
+…n”],[“valid_scope”,“BingAdsApi::Helpers::ScopeHelper”,“BingAdsApi/Helpers/ScopeHelper.html#method-i-valid_scope”,“(valid_scopes,
+scope)”,“&lt;p&gt;Internal : Validates the filter attribute at the
+ReporRequestninitialization At the first invalid filter
+…n”],[“valid_time”,“BingAdsApi::Helpers::TimeHelper”,“BingAdsApi/Helpers/TimeHelper.html#method-i-valid_time”,“(time)”,“&lt;p&gt;Public
+: Validates the time attribute present in some report
+requestn&lt;p&gt;Author &amp;mdash; jlopezn@neonline.clnn&lt;p&gt;time
+…n”],[“README”,“”,“README_rdoc.html”,“”,“&lt;p&gt;BingAdsApin&lt;p&gt;This
+project rocks and uses MIT-LICENSE.n&lt;p&gt;Presentationn”]]}}</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

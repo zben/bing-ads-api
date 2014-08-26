@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>navigation.js - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../MIT-LICENSE.html">MIT-LICENSE</a>
+  
+    <li class="file"><a href="../../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../../Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../bing-ads-api_gemspec.html">bing-ads-api.gemspec</a>
+  
+    <li class="file"><a href="../../lib/tasks/bing-ads-api_tasks_rake.html">bing-ads-api_tasks.rake</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi_html.html">BingAdsApi.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AccountInfo_html.html">AccountInfo.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AccountPerformanceReportRequest_html.html">AccountPerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AccountThroughCampaignReportScope_html.html">AccountThroughCampaignReportScope.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Ad_html.html">Ad.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdApiError_html.html">AdApiError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdApiFaultDetail_html.html">AdApiFaultDetail.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdGroup_html.html">AdGroup.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdLanguage_html.html">AdLanguage.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ApiException_html.html">ApiException.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ApiFaultDetail_html.html">ApiFaultDetail.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ApplicationFault_html.html">ApplicationFault.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/BatchError_html.html">BatchError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Campaign_html.html">Campaign.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignManagement_html.html">CampaignManagement.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignPerformanceReportFilter_html.html">CampaignPerformanceReportFilter.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignPerformanceReportRequest_html.html">CampaignPerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignScope_html.html">CampaignScope.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ClientProxy_html.html">ClientProxy.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Config_html.html">Config.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CustomerManagement_html.html">CustomerManagement.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/DataObject_html.html">DataObject.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/EditorialError_html.html">EditorialError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers_html.html">Helpers.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/ColumnHelper_html.html">ColumnHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/FilterHelper_html.html">FilterHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/ScopeHelper_html.html">ScopeHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/TimeHelper_html.html">TimeHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/MobileAd_html.html">MobileAd.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/OperationError_html.html">OperationError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/PartialErrors_html.html">PartialErrors.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/PerformanceReportRequest_html.html">PerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ProductAd_html.html">ProductAd.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportAggregation_html.html">ReportAggregation.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportFormat_html.html">ReportFormat.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportLanguage_html.html">ReportLanguage.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportRequest_html.html">ReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportRequestStatus_html.html">ReportRequestStatus.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportTimePeriods_html.html">ReportTimePeriods.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Reporting_html.html">Reporting.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/SOAPHasheable_html.html">SOAPHasheable.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Service_html.html">Service.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/TextAd_html.html">TextAd.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/TimeZone_html.html">TimeZone.html</a>
+  
+    <li class="file"><a href="../../rdoc/README_rdoc_html.html">README_rdoc.html</a>
+  
+    <li class="file"><a href="../../rdoc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../rdoc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../rdoc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../../rdoc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../rdoc/table_of_contents_html.html">table_of_contents.html</a>
+  
+    <li class="file"><a href="../../test/dummy/README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../../test/dummy/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../test/dummy/app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li class="file"><a href="../../test/dummy/app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li class="file"><a href="../../test/dummy/config_ru.html">config.ru</a>
+  
+    <li class="file"><a href="../../test/dummy/public/404_html.html">404.html</a>
+  
+    <li class="file"><a href="../../test/dummy/public/422_html.html">422.html</a>
+  
+    <li class="file"><a href="../../test/dummy/public/500_html.html">500.html</a>
+  
+    <li class="file"><a href="../../test/dummy/public/favicon_ico.html">favicon.ico</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="../../ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="../../BingAdsApi.html">BingAdsApi</a>
+  
+    <li><a href="../../BingAdsApi/AccountInfo.html">BingAdsApi::AccountInfo</a>
+  
+    <li><a href="../../BingAdsApi/AccountPerformanceReportRequest.html">BingAdsApi::AccountPerformanceReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/Ad.html">BingAdsApi::Ad</a>
+  
+    <li><a href="../../BingAdsApi/AdApiError.html">BingAdsApi::AdApiError</a>
+  
+    <li><a href="../../BingAdsApi/AdApiFaultDetail.html">BingAdsApi::AdApiFaultDetail</a>
+  
+    <li><a href="../../BingAdsApi/AdGroup.html">BingAdsApi::AdGroup</a>
+  
+    <li><a href="../../BingAdsApi/AdLanguage.html">BingAdsApi::AdLanguage</a>
+  
+    <li><a href="../../BingAdsApi/ApiException.html">BingAdsApi::ApiException</a>
+  
+    <li><a href="../../BingAdsApi/ApiFaultDetail.html">BingAdsApi::ApiFaultDetail</a>
+  
+    <li><a href="../../BingAdsApi/ApplicationFault.html">BingAdsApi::ApplicationFault</a>
+  
+    <li><a href="../../BingAdsApi/BatchError.html">BingAdsApi::BatchError</a>
+  
+    <li><a href="../../BingAdsApi/CallDetailReportRequest.html">BingAdsApi::CallDetailReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/Campaign.html">BingAdsApi::Campaign</a>
+  
+    <li><a href="../../BingAdsApi/CampaignManagement.html">BingAdsApi::CampaignManagement</a>
+  
+    <li><a href="../../BingAdsApi/CampaignPerformanceReportRequest.html">BingAdsApi::CampaignPerformanceReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/ClientProxy.html">BingAdsApi::ClientProxy</a>
+  
+    <li><a href="../../BingAdsApi/Config.html">BingAdsApi::Config</a>
+  
+    <li><a href="../../BingAdsApi/CustomerManagement.html">BingAdsApi::CustomerManagement</a>
+  
+    <li><a href="../../BingAdsApi/DataObject.html">BingAdsApi::DataObject</a>
+  
+    <li><a href="../../BingAdsApi/EditorialError.html">BingAdsApi::EditorialError</a>
+  
+    <li><a href="../../BingAdsApi/Helpers.html">BingAdsApi::Helpers</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/ColumnHelper.html">BingAdsApi::Helpers::ColumnHelper</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/FilterHelper.html">BingAdsApi::Helpers::FilterHelper</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/ScopeHelper.html">BingAdsApi::Helpers::ScopeHelper</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/TimeHelper.html">BingAdsApi::Helpers::TimeHelper</a>
+  
+    <li><a href="../../BingAdsApi/MobileAd.html">BingAdsApi::MobileAd</a>
+  
+    <li><a href="../../BingAdsApi/OperationError.html">BingAdsApi::OperationError</a>
+  
+    <li><a href="../../BingAdsApi/PartialErrors.html">BingAdsApi::PartialErrors</a>
+  
+    <li><a href="../../BingAdsApi/PerformanceReportRequest.html">BingAdsApi::PerformanceReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/ProductAd.html">BingAdsApi::ProductAd</a>
+  
+    <li><a href="../../BingAdsApi/ReportAggregation.html">BingAdsApi::ReportAggregation</a>
+  
+    <li><a href="../../BingAdsApi/ReportFormat.html">BingAdsApi::ReportFormat</a>
+  
+    <li><a href="../../BingAdsApi/ReportLanguage.html">BingAdsApi::ReportLanguage</a>
+  
+    <li><a href="../../BingAdsApi/ReportRequest.html">BingAdsApi::ReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/ReportRequestStatus.html">BingAdsApi::ReportRequestStatus</a>
+  
+    <li><a href="../../BingAdsApi/ReportTimePeriods.html">BingAdsApi::ReportTimePeriods</a>
+  
+    <li><a href="../../BingAdsApi/Reporting.html">BingAdsApi::Reporting</a>
+  
+    <li><a href="../../BingAdsApi/SOAPHasheable.html">BingAdsApi::SOAPHasheable</a>
+  
+    <li><a href="../../BingAdsApi/Service.html">BingAdsApi::Service</a>
+  
+    <li><a href="../../BingAdsApi/TextAd.html">BingAdsApi::TextAd</a>
+  
+    <li><a href="../../BingAdsApi/TimeZone.html">BingAdsApi::TimeZone</a>
+  
+    <li><a href="../../BingAdsApiTest.html">BingAdsApiTest</a>
+  
+    <li><a href="../../CampaignManagementTest.html">CampaignManagementTest</a>
+  
+    <li><a href="../../CustomerManagementTest.html">CustomerManagementTest</a>
+  
+    <li><a href="../../DataObjectTest.html">DataObjectTest</a>
+  
+    <li><a href="../../Dummy.html">Dummy</a>
+  
+    <li><a href="../../Dummy/Application.html">Dummy::Application</a>
+  
+    <li><a href="../../Object.html">Object</a>
+  
+    <li><a href="../../ReportRequestTest.html">ReportRequestTest</a>
+  
+    <li><a href="../../ReportingTest.html">ReportingTest</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<pre>Navigation allows movement using the arrow keys through the search results.
+
+When using this library you will need to set scrollIntoView to the
+appropriate function for your layout.  Use scrollInWindow if the container
+is not scrollable and scrollInElement if the container is a separate
+scrolling region.</pre>
+
+<p>Navigation = new function() {</p>
+
+<pre>this.initNavigation = function() {
+  var _this = this;
+
+  $(document).keydown(function(e) {
+    _this.onkeydown(e);
+  }).keyup(function(e) {
+    _this.onkeyup(e);
+  });
+
+  this.navigationActive = true;
+}
+
+this.setNavigationActive = function(state) {
+  this.navigationActive = state;
+  this.clearMoveTimeout();
+}
+
+this.onkeyup = function(e) {
+  if (!this.navigationActive) return;
+
+  switch(e.keyCode) {
+    case 37: //Event.KEY_LEFT:
+    case 38: //Event.KEY_UP:
+    case 39: //Event.KEY_RIGHT:
+    case 40: //Event.KEY_DOWN:
+      this.clearMoveTimeout();
+      break;
+  }
+}
+
+this.onkeydown = function(e) {
+  if (!this.navigationActive) return;
+  switch(e.keyCode) {
+    case 37: //Event.KEY_LEFT:
+      if (this.moveLeft()) e.preventDefault();
+      break;
+    case 38: //Event.KEY_UP:
+      if (e.keyCode == 38 || e.ctrlKey) {
+        if (this.moveUp()) e.preventDefault();
+        this.startMoveTimeout(false);
+      }
+      break;
+    case 39: //Event.KEY_RIGHT:
+      if (this.moveRight()) e.preventDefault();
+      break;
+    case 40: //Event.KEY_DOWN:
+      if (e.keyCode == 40 || e.ctrlKey) {
+        if (this.moveDown()) e.preventDefault();
+        this.startMoveTimeout(true);
+      }
+      break;
+    case 13: //Event.KEY_RETURN:
+      if (this.$current)
+        e.preventDefault();
+        this.select(this.$current);
+      break;
+  }
+  if (e.ctrlKey &amp;&amp; e.shiftKey) this.select(this.$current);
+}
+
+this.clearMoveTimeout = function() {
+  clearTimeout(this.moveTimeout);
+  this.moveTimeout = null;
+}
+
+this.startMoveTimeout = function(isDown) {
+  if (!$.browser.mozilla &amp;&amp; !$.browser.opera) return;
+  if (this.moveTimeout) this.clearMoveTimeout();
+  var _this = this;
+
+  var go = function() {
+    if (!_this.moveTimeout) return;
+    _this[isDown ? &#39;moveDown&#39; : &#39;moveUp&#39;]();
+    _this.moveTimout = setTimeout(go, 100);
+  }
+  this.moveTimeout = setTimeout(go, 200);
+}
+
+this.moveRight = function() {
+}
+
+this.moveLeft = function() {
+}
+
+this.move = function(isDown) {
+}
+
+this.moveUp = function() {
+  return this.move(false);
+}
+
+this.moveDown = function() {
+  return this.move(true);
+}
+
+/*
+   Scrolls to the given element in the scrollable element view.
+  /
+this.scrollInElement = function(element, view) {
+  var offset, viewHeight, viewScroll, height;
+  offset = element.offsetTop;
+  height = element.offsetHeight;
+  viewHeight = view.offsetHeight;
+  viewScroll = view.scrollTop;
+
+  if (offset - viewScroll + height &gt; viewHeight) {
+    view.scrollTop = offset - viewHeight + height;
+  }
+  if (offset &lt; viewScroll) {
+    view.scrollTop = offset;
+  }
+}
+
+/*
+   Scrolls to the given element in the window.  The second argument is
+   ignored
+  /
+this.scrollInWindow = function(element, ignored) {
+  var offset, viewHeight, viewScroll, height;
+  offset = element.offsetTop;
+  height = element.offsetHeight;
+  viewHeight = window.innerHeight;
+  viewScroll = window.scrollY;
+
+  if (offset - viewScroll + height &gt; viewHeight) {
+    window.scrollTo(window.scrollX, offset - viewHeight + height);
+  }
+  if (offset &lt; viewScroll) {
+    window.scrollTo(window.scrollX, offset);
+  }
+}</pre>
+
+<p>}</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

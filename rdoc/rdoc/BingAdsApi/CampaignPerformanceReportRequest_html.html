@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>CampaignPerformanceReportRequest.html - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../MIT-LICENSE.html">MIT-LICENSE</a>
+  
+    <li class="file"><a href="../../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../../Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../bing-ads-api_gemspec.html">bing-ads-api.gemspec</a>
+  
+    <li class="file"><a href="../../lib/tasks/bing-ads-api_tasks_rake.html">bing-ads-api_tasks.rake</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi_html.html">BingAdsApi.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AccountInfo_html.html">AccountInfo.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AccountPerformanceReportRequest_html.html">AccountPerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AccountThroughCampaignReportScope_html.html">AccountThroughCampaignReportScope.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Ad_html.html">Ad.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdApiError_html.html">AdApiError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdApiFaultDetail_html.html">AdApiFaultDetail.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdGroup_html.html">AdGroup.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/AdLanguage_html.html">AdLanguage.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ApiException_html.html">ApiException.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ApiFaultDetail_html.html">ApiFaultDetail.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ApplicationFault_html.html">ApplicationFault.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/BatchError_html.html">BatchError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Campaign_html.html">Campaign.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignManagement_html.html">CampaignManagement.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignPerformanceReportFilter_html.html">CampaignPerformanceReportFilter.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignPerformanceReportRequest_html.html">CampaignPerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CampaignScope_html.html">CampaignScope.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ClientProxy_html.html">ClientProxy.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Config_html.html">Config.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/CustomerManagement_html.html">CustomerManagement.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/DataObject_html.html">DataObject.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/EditorialError_html.html">EditorialError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers_html.html">Helpers.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/ColumnHelper_html.html">ColumnHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/FilterHelper_html.html">FilterHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/ScopeHelper_html.html">ScopeHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Helpers/TimeHelper_html.html">TimeHelper.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/MobileAd_html.html">MobileAd.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/OperationError_html.html">OperationError.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/PartialErrors_html.html">PartialErrors.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/PerformanceReportRequest_html.html">PerformanceReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ProductAd_html.html">ProductAd.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportAggregation_html.html">ReportAggregation.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportFormat_html.html">ReportFormat.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportLanguage_html.html">ReportLanguage.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportRequest_html.html">ReportRequest.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportRequestStatus_html.html">ReportRequestStatus.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/ReportTimePeriods_html.html">ReportTimePeriods.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Reporting_html.html">Reporting.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/SOAPHasheable_html.html">SOAPHasheable.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/Service_html.html">Service.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/TextAd_html.html">TextAd.html</a>
+  
+    <li class="file"><a href="../../rdoc/BingAdsApi/TimeZone_html.html">TimeZone.html</a>
+  
+    <li class="file"><a href="../../rdoc/README_rdoc_html.html">README_rdoc.html</a>
+  
+    <li class="file"><a href="../../rdoc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../rdoc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../rdoc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../../rdoc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../../rdoc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../rdoc/table_of_contents_html.html">table_of_contents.html</a>
+  
+    <li class="file"><a href="../../test/dummy/README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../../test/dummy/Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../test/dummy/app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li class="file"><a href="../../test/dummy/app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li class="file"><a href="../../test/dummy/config_ru.html">config.ru</a>
+  
+    <li class="file"><a href="../../test/dummy/public/404_html.html">404.html</a>
+  
+    <li class="file"><a href="../../test/dummy/public/422_html.html">422.html</a>
+  
+    <li class="file"><a href="../../test/dummy/public/500_html.html">500.html</a>
+  
+    <li class="file"><a href="../../test/dummy/public/favicon_ico.html">favicon.ico</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="../../ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="../../BingAdsApi.html">BingAdsApi</a>
+  
+    <li><a href="../../BingAdsApi/AccountInfo.html">BingAdsApi::AccountInfo</a>
+  
+    <li><a href="../../BingAdsApi/AccountPerformanceReportRequest.html">BingAdsApi::AccountPerformanceReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/Ad.html">BingAdsApi::Ad</a>
+  
+    <li><a href="../../BingAdsApi/AdApiError.html">BingAdsApi::AdApiError</a>
+  
+    <li><a href="../../BingAdsApi/AdApiFaultDetail.html">BingAdsApi::AdApiFaultDetail</a>
+  
+    <li><a href="../../BingAdsApi/AdGroup.html">BingAdsApi::AdGroup</a>
+  
+    <li><a href="../../BingAdsApi/AdLanguage.html">BingAdsApi::AdLanguage</a>
+  
+    <li><a href="../../BingAdsApi/ApiException.html">BingAdsApi::ApiException</a>
+  
+    <li><a href="../../BingAdsApi/ApiFaultDetail.html">BingAdsApi::ApiFaultDetail</a>
+  
+    <li><a href="../../BingAdsApi/ApplicationFault.html">BingAdsApi::ApplicationFault</a>
+  
+    <li><a href="../../BingAdsApi/BatchError.html">BingAdsApi::BatchError</a>
+  
+    <li><a href="../../BingAdsApi/CallDetailReportRequest.html">BingAdsApi::CallDetailReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/Campaign.html">BingAdsApi::Campaign</a>
+  
+    <li><a href="../../BingAdsApi/CampaignManagement.html">BingAdsApi::CampaignManagement</a>
+  
+    <li><a href="../../BingAdsApi/CampaignPerformanceReportRequest.html">BingAdsApi::CampaignPerformanceReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/ClientProxy.html">BingAdsApi::ClientProxy</a>
+  
+    <li><a href="../../BingAdsApi/Config.html">BingAdsApi::Config</a>
+  
+    <li><a href="../../BingAdsApi/CustomerManagement.html">BingAdsApi::CustomerManagement</a>
+  
+    <li><a href="../../BingAdsApi/DataObject.html">BingAdsApi::DataObject</a>
+  
+    <li><a href="../../BingAdsApi/EditorialError.html">BingAdsApi::EditorialError</a>
+  
+    <li><a href="../../BingAdsApi/Helpers.html">BingAdsApi::Helpers</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/ColumnHelper.html">BingAdsApi::Helpers::ColumnHelper</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/FilterHelper.html">BingAdsApi::Helpers::FilterHelper</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/ScopeHelper.html">BingAdsApi::Helpers::ScopeHelper</a>
+  
+    <li><a href="../../BingAdsApi/Helpers/TimeHelper.html">BingAdsApi::Helpers::TimeHelper</a>
+  
+    <li><a href="../../BingAdsApi/MobileAd.html">BingAdsApi::MobileAd</a>
+  
+    <li><a href="../../BingAdsApi/OperationError.html">BingAdsApi::OperationError</a>
+  
+    <li><a href="../../BingAdsApi/PartialErrors.html">BingAdsApi::PartialErrors</a>
+  
+    <li><a href="../../BingAdsApi/PerformanceReportRequest.html">BingAdsApi::PerformanceReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/ProductAd.html">BingAdsApi::ProductAd</a>
+  
+    <li><a href="../../BingAdsApi/ReportAggregation.html">BingAdsApi::ReportAggregation</a>
+  
+    <li><a href="../../BingAdsApi/ReportFormat.html">BingAdsApi::ReportFormat</a>
+  
+    <li><a href="../../BingAdsApi/ReportLanguage.html">BingAdsApi::ReportLanguage</a>
+  
+    <li><a href="../../BingAdsApi/ReportRequest.html">BingAdsApi::ReportRequest</a>
+  
+    <li><a href="../../BingAdsApi/ReportRequestStatus.html">BingAdsApi::ReportRequestStatus</a>
+  
+    <li><a href="../../BingAdsApi/ReportTimePeriods.html">BingAdsApi::ReportTimePeriods</a>
+  
+    <li><a href="../../BingAdsApi/Reporting.html">BingAdsApi::Reporting</a>
+  
+    <li><a href="../../BingAdsApi/SOAPHasheable.html">BingAdsApi::SOAPHasheable</a>
+  
+    <li><a href="../../BingAdsApi/Service.html">BingAdsApi::Service</a>
+  
+    <li><a href="../../BingAdsApi/TextAd.html">BingAdsApi::TextAd</a>
+  
+    <li><a href="../../BingAdsApi/TimeZone.html">BingAdsApi::TimeZone</a>
+  
+    <li><a href="../../BingAdsApiTest.html">BingAdsApiTest</a>
+  
+    <li><a href="../../CampaignManagementTest.html">CampaignManagementTest</a>
+  
+    <li><a href="../../CustomerManagementTest.html">CustomerManagementTest</a>
+  
+    <li><a href="../../DataObjectTest.html">DataObjectTest</a>
+  
+    <li><a href="../../Dummy.html">Dummy</a>
+  
+    <li><a href="../../Dummy/Application.html">Dummy::Application</a>
+  
+    <li><a href="../../Object.html">Object</a>
+  
+    <li><a href="../../ReportRequestTest.html">ReportRequestTest</a>
+  
+    <li><a href="../../ReportingTest.html">ReportingTest</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p>&lt;html&gt; &lt;head&gt; &lt;meta content=“text/html; charset=UTF-8”
+http-equiv=“Content-Type”&gt;</p>
+
+<p>&lt;title&gt;class <a
+href="../../BingAdsApi/CampaignPerformanceReportRequest.html">BingAdsApi::CampaignPerformanceReportRequest</a>
+- <a href="../../BingAdsApi.html">BingAdsApi</a>&lt;/title&gt;</p>
+
+<p>&lt;link type=“text/css” media=“screen” href=“../rdoc.css”
+rel=“stylesheet”&gt;</p>
+
+<p>&lt;script type=“text/javascript”&gt;</p>
+
+<pre>var rdoc_rel_prefix = &quot;../&quot;;</pre>
+
+<p>&lt;/script&gt;</p>
+
+<p>&lt;script type=“text/javascript” charset=“utf-8”
+src=“../js/jquery.js”&gt;&lt;/script&gt; &lt;script type=“text/javascript”
+charset=“utf-8” src=“../js/navigation.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../js/search_index.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../js/search.js”&gt;&lt;/script&gt; &lt;script type=“text/javascript”
+charset=“utf-8” src=“../js/searcher.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“../js/darkfish.js”&gt;&lt;/script&gt;</p>
+
+<p>&lt;body id=“top” class=“class”&gt; &lt;nav id=“metadata”&gt;</p>
+
+<pre>&lt;nav id=&quot;home-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;
+  &lt;a href=&quot;../index.html&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;../table_of_contents.html#classes&quot;&gt;Classes&lt;/a&gt;
+  &lt;a href=&quot;../table_of_contents.html#methods&quot;&gt;Methods&lt;/a&gt;
+&lt;/h3&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;nav id=&quot;search-section&quot; class=&quot;section project-section&quot; class=&quot;initially-hidden&quot;&gt;
+&lt;form action=&quot;#&quot; method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;
+  &lt;h3 class=&quot;section-header&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot;
+           title=&quot;Type to search, Up and Down to navigate, Enter to load&quot;&gt;
+  &lt;/h3&gt;
+&lt;/form&gt;
+
+&lt;ul id=&quot;search-results&quot; class=&quot;initially-hidden&quot;&gt;&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;div id=&quot;file-metadata&quot;&gt;
+  &lt;nav id=&quot;file-list-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Defined In&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;lib/bing-ads-api/data/reporting/campaign_performance_report_request.rb
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;
+
+&lt;div id=&quot;class-metadata&quot;&gt;
+
+  &lt;nav id=&quot;parent-class-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Parent&lt;/h3&gt;
+
+&lt;p class=&quot;link&quot;&gt;&lt;a href=&quot;PerformanceReportRequest.html&quot;&gt;BingAdsApi::PerformanceReportRequest&lt;/a&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;!-- Method Quickref --&gt;</pre>
+
+<p>&lt;nav id=“method-list-section” class=“section”&gt;</p>
+
+<pre>&lt;h3 class=&quot;section-header&quot;&gt;Methods&lt;/h3&gt;
+
+&lt;ul class=&quot;link-list&quot;&gt;
+
+  &lt;li&gt;&lt;a href=&quot;#method-c-new&quot;&gt;::new&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;#method-i-to_hash&quot;&gt;#to_hash&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;
+
+&lt;div id=&quot;project-metadata&quot;&gt;
+  &lt;nav id=&quot;fileindex-section&quot; class=&quot;section project-section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Pages&lt;/h3&gt;
+
+&lt;ul&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;../README_rdoc.html&quot;&gt;README&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>  &lt;nav id=&quot;classindex-section&quot; class=&quot;section project-section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Class and Module Index&lt;/h3&gt;
+
+&lt;ul class=&quot;link-list&quot;&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi.html&quot;&gt;BingAdsApi&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/AccountInfo.html&quot;&gt;BingAdsApi::AccountInfo&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/AccountPerformanceReportRequest.html&quot;&gt;BingAdsApi::AccountPerformanceReportRequest&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/Ad.html&quot;&gt;BingAdsApi::Ad&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/AdApiError.html&quot;&gt;BingAdsApi::AdApiError&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/AdApiFaultDetail.html&quot;&gt;BingAdsApi::AdApiFaultDetail&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/AdGroup.html&quot;&gt;BingAdsApi::AdGroup&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/AdLanguage.html&quot;&gt;BingAdsApi::AdLanguage&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ApiException.html&quot;&gt;BingAdsApi::ApiException&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ApiFaultDetail.html&quot;&gt;BingAdsApi::ApiFaultDetail&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ApplicationFault.html&quot;&gt;BingAdsApi::ApplicationFault&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/BatchError.html&quot;&gt;BingAdsApi::BatchError&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/Campaign.html&quot;&gt;BingAdsApi::Campaign&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/CampaignManagement.html&quot;&gt;BingAdsApi::CampaignManagement&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/CampaignPerformanceReportRequest.html&quot;&gt;BingAdsApi::CampaignPerformanceReportRequest&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ClientProxy.html&quot;&gt;BingAdsApi::ClientProxy&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/Config.html&quot;&gt;BingAdsApi::Config&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/CustomerManagement.html&quot;&gt;BingAdsApi::CustomerManagement&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/DataObject.html&quot;&gt;BingAdsApi::DataObject&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/EditorialError.html&quot;&gt;BingAdsApi::EditorialError&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/Helpers.html&quot;&gt;BingAdsApi::Helpers&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/Helpers/ColumnHelper.html&quot;&gt;BingAdsApi::Helpers::ColumnHelper&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/Helpers/FilterHelper.html&quot;&gt;BingAdsApi::Helpers::FilterHelper&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/Helpers/ScopeHelper.html&quot;&gt;BingAdsApi::Helpers::ScopeHelper&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/Helpers/TimeHelper.html&quot;&gt;BingAdsApi::Helpers::TimeHelper&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/MobileAd.html&quot;&gt;BingAdsApi::MobileAd&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/OperationError.html&quot;&gt;BingAdsApi::OperationError&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/PartialErrors.html&quot;&gt;BingAdsApi::PartialErrors&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/PerformanceReportRequest.html&quot;&gt;BingAdsApi::PerformanceReportRequest&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ProductAd.html&quot;&gt;BingAdsApi::ProductAd&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ReportAggregation.html&quot;&gt;BingAdsApi::ReportAggregation&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ReportFormat.html&quot;&gt;BingAdsApi::ReportFormat&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ReportLanguage.html&quot;&gt;BingAdsApi::ReportLanguage&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ReportRequest.html&quot;&gt;BingAdsApi::ReportRequest&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ReportRequestStatus.html&quot;&gt;BingAdsApi::ReportRequestStatus&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/ReportTimePeriods.html&quot;&gt;BingAdsApi::ReportTimePeriods&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/Reporting.html&quot;&gt;BingAdsApi::Reporting&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/SOAPHasheable.html&quot;&gt;BingAdsApi::SOAPHasheable&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/Service.html&quot;&gt;BingAdsApi::Service&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/TextAd.html&quot;&gt;BingAdsApi::TextAd&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;../BingAdsApi/TimeZone.html&quot;&gt;BingAdsApi::TimeZone&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<p>&lt;div id=“documentation”&gt;</p>
+
+<pre class="ruby"><span class="ruby-operator">&lt;</span><span class="ruby-identifier">h1</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;class&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-keyword">class</span> <span class="ruby-constant">BingAdsApi</span><span class="ruby-operator">::</span><span class="ruby-constant">CampaignPerformanceReportRequest</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/h1&gt;
+
+&lt;div id=&quot;description&quot; class=&quot;description&quot;&gt;
+</span></pre>
+
+<p>&lt;p&gt;Public : Defines the base object for all report requests. Do not
+instantiate this object. Instead, you may instantiate one  of the following
+report request objects which derives from this object to request a
+report.&lt;/p&gt;</p>
+
+<p>&lt;p&gt;Reference: &lt;a href=“<a
+href="http://msdn.microsoft.com/en-us/library/bing-ads-reporting-bing-ads-reportrequest.aspx">msdn.microsoft.com/en-us/library/bing-ads-reporting-bing-ads-reportrequest.aspx</a></p">msdn.microsoft.com/en-us/library/bing-ads-reporting-bing-ads-reportrequest.aspx”>msdn.microsoft.com/en-us/library/bing-ads-reporting-bing-ads-reportrequest.aspx</a></p</a>&gt;
+&lt;dl class=“rdoc-list note-list”&gt;&lt;dt&gt;Author &lt;dd&gt;
+&lt;p&gt;jlopezn@neonline.cl&lt;/p&gt; &lt;/dd&gt;&lt;/dl&gt;</p>
+
+<p>&lt;h3 id=“label-Usage”&gt;Usage&lt;/h3&gt;</p>
+
+<p>&lt;pre class=“ruby”&gt;&lt;span
+class=“ruby-identifier”&gt;request&lt;/span&gt; = &lt;span
+class=“ruby-constant”&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=“ruby-operator”&gt;::&lt;/span&gt;&lt;span
+class=“ruby-constant”&gt;CampaignPerformanceReportRequest&lt;/span&gt;.&lt;span
+class=“ruby-identifier”&gt;new&lt;/span&gt;(</p>
+
+<pre>:&lt;span class=&quot;ruby-identifier&quot;&gt;format&lt;/span&gt;   =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;xml&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;language&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;english&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;report_name&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Me report&amp;quot;&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;aggregation&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;hourly&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;columns&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [:&lt;span class=&quot;ruby-identifier&quot;&gt;account_name&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;account_number&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;time_period&lt;/span&gt;],
+&lt;span class=&quot;ruby-comment&quot;&gt;# The filter is specified as a hash&lt;/span&gt;
+:&lt;span class=&quot;ruby-identifier&quot;&gt;filter&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
+  &lt;span class=&quot;ruby-comment&quot;&gt;# specifies the Bing expected String value&lt;/span&gt;
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;ad_distribution&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Search&amp;quot;&lt;/span&gt;, 
+  &lt;span class=&quot;ruby-comment&quot;&gt;# specifies criteria as a snake case symbol&lt;/span&gt;
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;device_os&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;android&lt;/span&gt;,
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;device_type&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;tablet&lt;/span&gt;,
+  &lt;span class=&quot;ruby-comment&quot;&gt;# criteria nil is similar to not specify it at all&lt;/span&gt;
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;status&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;nil&lt;/span&gt; },
+:&lt;span class=&quot;ruby-identifier&quot;&gt;scope&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; { 
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;account_ids&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [&lt;span class=&quot;ruby-value&quot;&gt;123456&lt;/span&gt;, &lt;span class=&quot;ruby-value&quot;&gt;234567&lt;/span&gt;],
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;campaigns&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [&lt;span class=&quot;ruby-operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;ruby-constant&quot;&gt;CampaignReportScope&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt;] },
+&lt;span class=&quot;ruby-comment&quot;&gt;# predefined date&lt;/span&gt;
+:&lt;span class=&quot;ruby-identifier&quot;&gt;time&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;this_week&lt;/span&gt;)</pre>
+
+<p>&lt;span class=“ruby-identifier”&gt;request2&lt;/span&gt; = &lt;span
+class=“ruby-constant”&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=“ruby-operator”&gt;::&lt;/span&gt;&lt;span
+class=“ruby-constant”&gt;CampaignPerformanceReportRequest&lt;/span&gt;.&lt;span
+class=“ruby-identifier”&gt;new&lt;/span&gt;(</p>
+
+<pre>:&lt;span class=&quot;ruby-identifier&quot;&gt;format&lt;/span&gt;   =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;csv&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;language&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;french&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;report_name&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Me report&amp;quot;&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;aggregation&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;daily&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;columns&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [:&lt;span class=&quot;ruby-identifier&quot;&gt;account_name&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;account_number&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;time_period&lt;/span&gt;],
+&lt;span class=&quot;ruby-comment&quot;&gt;# no filter is specified &lt;/span&gt;
+:&lt;span class=&quot;ruby-identifier&quot;&gt;scope&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; { 
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;account_ids&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [&lt;span class=&quot;ruby-value&quot;&gt;123456&lt;/span&gt;, &lt;span class=&quot;ruby-value&quot;&gt;234567&lt;/span&gt;],
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;campaigns&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [&lt;span class=&quot;ruby-operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;ruby-constant&quot;&gt;CampaignReportScope&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt;] },
+&lt;span class=&quot;ruby-comment&quot;&gt;# Custom date range&lt;/span&gt;
+:&lt;span class=&quot;ruby-identifier&quot;&gt;time&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;custom_date_range_start&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; {:&lt;span class=&quot;ruby-identifier&quot;&gt;day&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;month&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;12&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;year&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;2013&lt;/span&gt;},
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;custom_date_range_end&lt;/span&gt;   =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; {:&lt;span class=&quot;ruby-identifier&quot;&gt;day&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;12&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;month&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;12&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;year&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;2013&lt;/span&gt;} }
+)</pre>
+
+<p>&lt;/pre&gt;</p>
+
+<pre>&lt;/div&gt;&lt;!-- description --&gt;
+
+&lt;section id=&quot;5Buntitled-5D&quot; class=&quot;documentation-section&quot;&gt;
+
+  &lt;!-- Constants --&gt;
+  &lt;section id=&quot;constants-list&quot; class=&quot;section&quot;&gt;
+    &lt;h3 class=&quot;section-header&quot;&gt;Constants&lt;/h3&gt;
+    &lt;dl&gt;
+
+      &lt;dt id=&quot;COLUMNS&quot;&gt;COLUMNS
+
+      &lt;dd class=&quot;description&quot;&gt;&lt;p&gt;Valid Columns for this report request&lt;/p&gt;
+
+      &lt;dt id=&quot;FILTERS&quot;&gt;FILTERS
+
+      &lt;dd class=&quot;description&quot;&gt;&lt;p&gt;Valid Filters for this report request&lt;/p&gt;
+
+    &lt;/dl&gt;
+  &lt;/section&gt;
+
+  &lt;!-- Methods --&gt;
+
+   &lt;section id=&quot;public-class-5Buntitled-5D-method-details&quot; class=&quot;method-section section&quot;&gt;
+    &lt;h3 class=&quot;section-header&quot;&gt;Public Class Methods&lt;/h3&gt;
+
+    &lt;div id=&quot;method-c-new&quot; class=&quot;method-detail &quot;&gt;
+
+      &lt;div class=&quot;method-heading&quot;&gt;
+        &lt;span class=&quot;method-name&quot;&gt;new&lt;/span&gt;&lt;span
+          class=&quot;method-args&quot;&gt;(attributes={})&lt;/span&gt;
+        &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;method-description&quot;&gt;
+
+        &lt;p&gt;Public : Constructor. Adds a validations for the columns, filter  and scope</pre>
+
+<p>attributes&lt;/p&gt; &lt;dl class=“rdoc-list note-list”&gt;&lt;dt&gt;Author
+&lt;dd&gt; &lt;p&gt;jlopezn@neonline.cl&lt;/p&gt; &lt;/dd&gt;&lt;/dl&gt;</p>
+
+<p>&lt;h3 id=“method-c-new-label-Parameters”&gt;Parameters&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt; &lt;p&gt;<code>attributes</code> - Hash with the
+report request attributes&lt;/p&gt; &lt;/li&gt;&lt;/ul&gt;</p>
+
+<p>&lt;h3 id=“method-c-new-label-Example”&gt;Example&lt;/h3&gt;</p>
+
+<p>&lt;pre class=“ruby”&gt;&lt;span
+class=“ruby-identifier”&gt;request&lt;/span&gt; = &lt;span
+class=“ruby-constant”&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=“ruby-operator”&gt;::&lt;/span&gt;&lt;span
+class=“ruby-constant”&gt;CampaignPerformanceReportRequest&lt;/span&gt;.&lt;span
+class=“ruby-identifier”&gt;new&lt;/span&gt;(</p>
+
+<pre>:&lt;span class=&quot;ruby-identifier&quot;&gt;format&lt;/span&gt;   =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;xml&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;language&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;english&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;report_name&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Me report&amp;quot;&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;aggregation&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;hourly&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;columns&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [:&lt;span class=&quot;ruby-identifier&quot;&gt;account_name&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;account_number&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;time_period&lt;/span&gt;],
+&lt;span class=&quot;ruby-comment&quot;&gt;# The filter is specified as a hash&lt;/span&gt;
+:&lt;span class=&quot;ruby-identifier&quot;&gt;filter&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
+  &lt;span class=&quot;ruby-comment&quot;&gt;# specifies the Bing expected String value&lt;/span&gt;
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;ad_distribution&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Search&amp;quot;&lt;/span&gt;, 
+  &lt;span class=&quot;ruby-comment&quot;&gt;# specifies criteria as a snake case symbol&lt;/span&gt;
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;device_os&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;android&lt;/span&gt;,
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;device_type&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;tablet&lt;/span&gt;,
+  &lt;span class=&quot;ruby-comment&quot;&gt;# criteria nil is similar to not specify it at all&lt;/span&gt;
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;status&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;nil&lt;/span&gt; },
+:&lt;span class=&quot;ruby-identifier&quot;&gt;scope&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; { 
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;account_ids&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [&lt;span class=&quot;ruby-value&quot;&gt;123456&lt;/span&gt;, &lt;span class=&quot;ruby-value&quot;&gt;234567&lt;/span&gt;],
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;campaigns&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [&lt;span class=&quot;ruby-operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;ruby-constant&quot;&gt;CampaignReportScope&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt;] },
+&lt;span class=&quot;ruby-comment&quot;&gt;# predefined date&lt;/span&gt;
+:&lt;span class=&quot;ruby-identifier&quot;&gt;time&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;this_week&lt;/span&gt;)</pre>
+
+<p>&lt;span class=“ruby-identifier”&gt;request2&lt;/span&gt; = &lt;span
+class=“ruby-constant”&gt;BingAdsApi&lt;/span&gt;&lt;span
+class=“ruby-operator”&gt;::&lt;/span&gt;&lt;span
+class=“ruby-constant”&gt;CampaignPerformanceReportRequest&lt;/span&gt;.&lt;span
+class=“ruby-identifier”&gt;new&lt;/span&gt;(</p>
+
+<pre>:&lt;span class=&quot;ruby-identifier&quot;&gt;format&lt;/span&gt;   =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;csv&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;language&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;french&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;report_name&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Me report&amp;quot;&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;aggregation&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;ruby-identifier&quot;&gt;daily&lt;/span&gt;,
+:&lt;span class=&quot;ruby-identifier&quot;&gt;columns&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [:&lt;span class=&quot;ruby-identifier&quot;&gt;account_name&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;account_number&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;time_period&lt;/span&gt;],
+&lt;span class=&quot;ruby-comment&quot;&gt;# no filter is specified &lt;/span&gt;
+:&lt;span class=&quot;ruby-identifier&quot;&gt;scope&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; { 
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;account_ids&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [&lt;span class=&quot;ruby-value&quot;&gt;123456&lt;/span&gt;, &lt;span class=&quot;ruby-value&quot;&gt;234567&lt;/span&gt;],
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;campaigns&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; [&lt;span class=&quot;ruby-operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;ruby-constant&quot;&gt;BingAdsApi&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;ruby-constant&quot;&gt;CampaignReportScope&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt;] },
+&lt;span class=&quot;ruby-comment&quot;&gt;# Custom date range&lt;/span&gt;
+:&lt;span class=&quot;ruby-identifier&quot;&gt;time&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; {
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;custom_date_range_start&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; {:&lt;span class=&quot;ruby-identifier&quot;&gt;day&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;month&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;12&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;year&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;2013&lt;/span&gt;},
+  :&lt;span class=&quot;ruby-identifier&quot;&gt;custom_date_range_end&lt;/span&gt;   =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; {:&lt;span class=&quot;ruby-identifier&quot;&gt;day&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;12&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;month&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;12&lt;/span&gt;, :&lt;span class=&quot;ruby-identifier&quot;&gt;year&lt;/span&gt; =&lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;2013&lt;/span&gt;} }
+)</pre>
+
+<p>&lt;/pre&gt;</p>
+
+<pre>&lt;div class=&quot;method-source-code&quot; id=&quot;new-source&quot;&gt;
+  &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File lib/bing-ads-api/data/reporting/campaign_performance_report_request.rb, line 109&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;initialize&lt;/span&gt;(&lt;span
+class=“ruby-identifier”&gt;attributes&lt;/span&gt;={})</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;ruby-constant&quot;&gt;Exception&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;new&lt;/span&gt;(&lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Invalid columns&amp;quot;&lt;/span&gt;) &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;valid_columns&lt;/span&gt;(&lt;span class=&quot;ruby-constant&quot;&gt;COLUMNS&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;attributes&lt;/span&gt;[&lt;span class=&quot;ruby-value&quot;&gt;:columns&lt;/span&gt;])
+&lt;span class=&quot;ruby-identifier&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;ruby-constant&quot;&gt;Exception&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;new&lt;/span&gt;(&lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Invalid filters&amp;quot;&lt;/span&gt;) &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;valid_filter&lt;/span&gt;(&lt;span class=&quot;ruby-constant&quot;&gt;FILTERS&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;attributes&lt;/span&gt;[&lt;span class=&quot;ruby-value&quot;&gt;:filter&lt;/span&gt;])
+&lt;span class=&quot;ruby-identifier&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;ruby-constant&quot;&gt;Exception&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;new&lt;/span&gt;(&lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Invalid scope&amp;quot;&lt;/span&gt;) &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;valid_scope&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;attributes&lt;/span&gt;[&lt;span class=&quot;ruby-value&quot;&gt;:scope&lt;/span&gt;])
+&lt;span class=&quot;ruby-keyword&quot;&gt;super&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;attributes&lt;/span&gt;)</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>      &lt;/div&gt;&lt;!-- new-source --&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;!-- new-method --&gt;
+
+&lt;/section&gt;&lt;!-- public-class-method-details --&gt;
+
+ &lt;section id=&quot;public-instance-5Buntitled-5D-method-details&quot; class=&quot;method-section section&quot;&gt;
+  &lt;h3 class=&quot;section-header&quot;&gt;Public Instance Methods&lt;/h3&gt;
+
+  &lt;div id=&quot;method-i-to_hash&quot; class=&quot;method-detail &quot;&gt;
+
+    &lt;div class=&quot;method-heading&quot;&gt;
+      &lt;span class=&quot;method-name&quot;&gt;to_hash&lt;/span&gt;&lt;span
+        class=&quot;method-args&quot;&gt;(keys = :underscore)&lt;/span&gt;
+      &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;method-description&quot;&gt;
+
+      &lt;dl class=&quot;rdoc-list note-list&quot;&gt;&lt;dt&gt;Public</pre>
+
+<p>&lt;dd&gt; &lt;p&gt;Returns the object as a Hash valid for SOAP
+requests&lt;/p&gt; &lt;/dd&gt;&lt;dt&gt;Author &lt;dd&gt;
+&lt;p&gt;jlopezn@neonline.cl&lt;/p&gt; &lt;/dd&gt;&lt;/dl&gt;</p>
+
+<p>&lt;h3 id=“method-i-to_hash-label-Parameters”&gt;Parameters&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt; &lt;p&gt;<code>keys_case</code> - case for the hashes
+keys: underscore or camelcase&lt;/p&gt; &lt;/li&gt;&lt;/ul&gt; &lt;dl
+class=“rdoc-list note-list”&gt;&lt;dt&gt;Returns &lt;dd&gt;
+&lt;p&gt;Hash&lt;/p&gt; &lt;/dd&gt;&lt;/dl&gt;</p>
+
+<pre>&lt;div class=&quot;method-source-code&quot; id=&quot;to_hash-source&quot;&gt;
+  &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File lib/bing-ads-api/data/reporting/campaign_performance_report_request.rb, line 125&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;to_hash&lt;/span&gt;(&lt;span
+class=“ruby-identifier”&gt;keys&lt;/span&gt; = &lt;span
+class=“ruby-value”&gt;:underscore&lt;/span&gt;)</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;hash&lt;/span&gt; = &lt;span class=&quot;ruby-keyword&quot;&gt;super&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;keys&lt;/span&gt;)
+&lt;span class=&quot;ruby-identifier&quot;&gt;hash&lt;/span&gt;[&lt;span class=&quot;ruby-identifier&quot;&gt;get_attribute_key&lt;/span&gt;(&lt;span class=&quot;ruby-string&quot;&gt;&#39;columns&#39;&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;keys&lt;/span&gt;)] = 
+        &lt;span class=&quot;ruby-identifier&quot;&gt;columns_to_hash&lt;/span&gt;(&lt;span class=&quot;ruby-constant&quot;&gt;COLUMNS&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;columns&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;keys&lt;/span&gt;)
+&lt;span class=&quot;ruby-identifier&quot;&gt;hash&lt;/span&gt;[&lt;span class=&quot;ruby-identifier&quot;&gt;get_attribute_key&lt;/span&gt;(&lt;span class=&quot;ruby-string&quot;&gt;&#39;filter&#39;&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;keys&lt;/span&gt;)] = 
+        &lt;span class=&quot;ruby-identifier&quot;&gt;filter_to_hash&lt;/span&gt;(&lt;span class=&quot;ruby-constant&quot;&gt;FILTERS&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;keys&lt;/span&gt;)
+&lt;span class=&quot;ruby-identifier&quot;&gt;hash&lt;/span&gt;[&lt;span class=&quot;ruby-identifier&quot;&gt;get_attribute_key&lt;/span&gt;(&lt;span class=&quot;ruby-string&quot;&gt;&#39;scope&#39;&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;keys&lt;/span&gt;)] = &lt;span class=&quot;ruby-identifier&quot;&gt;scope_to_hash&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;keys&lt;/span&gt;) 
+&lt;span class=&quot;ruby-identifier&quot;&gt;hash&lt;/span&gt;[&lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;@xsi:type&amp;quot;&lt;/span&gt;] = &lt;span class=&quot;ruby-identifier&quot;&gt;type_attribute_for_soap&lt;/span&gt; 
+&lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;hash&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>        &lt;/div&gt;&lt;!-- to_hash-source --&gt;
+
+      &lt;/div&gt;
+
+    &lt;/div&gt;&lt;!-- to_hash-method --&gt;
+
+  &lt;/section&gt;&lt;!-- public-instance-method-details --&gt;
+
+&lt;/section&gt;&lt;!-- 5Buntitled-5D --&gt;</pre>
+
+<p>&lt;/div&gt;&lt;!– documentation –&gt;</p>
+
+<p>&lt;footer id=“validator-badges”&gt;</p>
+
+<pre>&lt;p&gt;&lt;a href=&quot;http://validator.w3.org/check/referer&quot;&gt;[Validate]&lt;/a&gt;
+&lt;p&gt;Generated by &lt;a href=&quot;https://github.com/rdoc/rdoc&quot;&gt;RDoc&lt;/a&gt; 3.12.2.
+&lt;p&gt;Generated with the &lt;a href=&quot;http://deveiate.org/projects/Darkfish-Rdoc/&quot;&gt;Darkfish Rdoc Generator&lt;/a&gt; 3.</pre>
+
+<p>&lt;/footer&gt;</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

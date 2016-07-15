@@ -2,72 +2,71 @@
 
 <html>
 <head>
-<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta charset="UTF-8">
 
 <title>class BingAdsApi::DataObject - RDoc Documentation</title>
 
-<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+<link href="../fonts.css" rel="stylesheet">
+<link href="../rdoc.css" rel="stylesheet">
 
 <script type="text/javascript">
   var rdoc_rel_prefix = "../";
 </script>
 
-<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
-<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search_index.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/searcher.js"></script>
+<script src="../js/darkfish.js"></script>
 
 
-<body id="top" class="class">
-<nav id="metadata">
-  <nav id="home-section" class="section">
-  <h3 class="section-header">
-    <a href="../index.html">Home</a>
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
     <a href="../table_of_contents.html#classes">Classes</a>
     <a href="../table_of_contents.html#methods">Methods</a>
-  </h3>
-</nav>
+  </div>
+</div>
 
-
-  <nav id="search-section" class="section project-section" class="initially-hidden">
+    <div id="search-section" role="search" class="project-section initially-hidden">
   <form action="#" method="get" accept-charset="utf-8">
-    <h3 class="section-header">
-      <input type="text" name="search" placeholder="Search" id="search-field"
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
              title="Type to search, Up and Down to navigate, Enter to load">
-    </h3>
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
   </form>
+</div>
 
-  <ul id="search-results" class="initially-hidden"></ul>
-</nav>
-
+  </div>
 
   
-
-  <div id="file-metadata">
-    <nav id="file-list-section" class="section">
-  <h3 class="section-header">Defined In</h3>
-  <ul>
-    <li>lib/bing-ads-api/data_object.rb
-  </ul>
-</nav>
-
-    
-  </div>
 
   <div id="class-metadata">
     
-    <nav id="parent-class-section" class="section">
-  <h3 class="section-header">Parent</h3>
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
   
   <p class="link"><a href="../Object.html">Object</a>
   
-</nav>
+</div>
 
-    <!-- Included Modules -->
-<nav id="includes-section" class="section">
-  <h3 class="section-header">Included Modules</h3>
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
 
   <ul class="link-list">
   
@@ -76,296 +75,31 @@
   
   
   </ul>
-</nav>
+</div>
 
     
     <!-- Method Quickref -->
-<nav id="method-list-section" class="section">
-  <h3 class="section-header">Methods</h3>
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
 
-  <ul class="link-list">
+  <ul class="link-list" role="directory">
     
     <li ><a href="#method-c-new">::new</a>
     
     <li ><a href="#method-i-to_s">#to_s</a>
     
   </ul>
-</nav>
-
-  </div>
-
-  <div id="project-metadata">
-    <nav id="fileindex-section" class="section project-section">
-  <h3 class="section-header">Pages</h3>
-
-  <ul>
-  
-    <li class="file"><a href="../Gemfile.html">Gemfile</a>
-  
-    <li class="file"><a href="../Gemfile_lock.html">Gemfile.lock</a>
-  
-    <li class="file"><a href="../MIT-LICENSE.html">MIT-LICENSE</a>
-  
-    <li class="file"><a href="../README_rdoc.html">README</a>
-  
-    <li class="file"><a href="../Rakefile.html">Rakefile</a>
-  
-    <li class="file"><a href="../bing-ads-api_gemspec.html">bing-ads-api.gemspec</a>
-  
-    <li class="file"><a href="../lib/tasks/bing-ads-api_tasks_rake.html">bing-ads-api_tasks.rake</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi_html.html">BingAdsApi.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/AccountInfo_html.html">AccountInfo.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/AccountPerformanceReportRequest_html.html">AccountPerformanceReportRequest.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/AccountThroughCampaignReportScope_html.html">AccountThroughCampaignReportScope.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/Ad_html.html">Ad.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/AdApiError_html.html">AdApiError.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/AdApiFaultDetail_html.html">AdApiFaultDetail.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/AdGroup_html.html">AdGroup.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/AdLanguage_html.html">AdLanguage.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ApiException_html.html">ApiException.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ApiFaultDetail_html.html">ApiFaultDetail.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ApplicationFault_html.html">ApplicationFault.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/BatchError_html.html">BatchError.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/Campaign_html.html">Campaign.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/CampaignManagement_html.html">CampaignManagement.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/CampaignPerformanceReportFilter_html.html">CampaignPerformanceReportFilter.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/CampaignPerformanceReportRequest_html.html">CampaignPerformanceReportRequest.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/CampaignScope_html.html">CampaignScope.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ClientProxy_html.html">ClientProxy.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/Config_html.html">Config.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/CustomerManagement_html.html">CustomerManagement.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/DataObject_html.html">DataObject.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/EditorialError_html.html">EditorialError.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/Helpers_html.html">Helpers.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/Helpers/ColumnHelper_html.html">ColumnHelper.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/Helpers/FilterHelper_html.html">FilterHelper.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/Helpers/ScopeHelper_html.html">ScopeHelper.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/Helpers/TimeHelper_html.html">TimeHelper.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/MobileAd_html.html">MobileAd.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/OperationError_html.html">OperationError.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/PartialErrors_html.html">PartialErrors.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/PerformanceReportRequest_html.html">PerformanceReportRequest.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ProductAd_html.html">ProductAd.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ReportAggregation_html.html">ReportAggregation.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ReportFormat_html.html">ReportFormat.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ReportLanguage_html.html">ReportLanguage.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ReportRequest_html.html">ReportRequest.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ReportRequestStatus_html.html">ReportRequestStatus.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/ReportTimePeriods_html.html">ReportTimePeriods.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/Reporting_html.html">Reporting.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/SOAPHasheable_html.html">SOAPHasheable.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/Service_html.html">Service.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/TextAd_html.html">TextAd.html</a>
-  
-    <li class="file"><a href="../rdoc/BingAdsApi/TimeZone_html.html">TimeZone.html</a>
-  
-    <li class="file"><a href="../rdoc/README_rdoc_html.html">README_rdoc.html</a>
-  
-    <li class="file"><a href="../rdoc/created_rid.html">created.rid</a>
-  
-    <li class="file"><a href="../rdoc/index_html.html">index.html</a>
-  
-    <li class="file"><a href="../rdoc/js/darkfish_js.html">darkfish.js</a>
-  
-    <li class="file"><a href="../rdoc/js/jquery_js.html">jquery.js</a>
-  
-    <li class="file"><a href="../rdoc/js/navigation_js.html">navigation.js</a>
-  
-    <li class="file"><a href="../rdoc/js/search_js.html">search.js</a>
-  
-    <li class="file"><a href="../rdoc/js/search_index_js.html">search_index.js</a>
-  
-    <li class="file"><a href="../rdoc/js/searcher_js.html">searcher.js</a>
-  
-    <li class="file"><a href="../rdoc/rdoc_css.html">rdoc.css</a>
-  
-    <li class="file"><a href="../rdoc/table_of_contents_html.html">table_of_contents.html</a>
-  
-    <li class="file"><a href="../test/dummy/README_rdoc.html">README</a>
-  
-    <li class="file"><a href="../test/dummy/Rakefile.html">Rakefile</a>
-  
-    <li class="file"><a href="../test/dummy/app/assets/javascripts/application_js.html">application.js</a>
-  
-    <li class="file"><a href="../test/dummy/app/assets/stylesheets/application_css.html">application.css</a>
-  
-    <li class="file"><a href="../test/dummy/config_ru.html">config.ru</a>
-  
-    <li class="file"><a href="../test/dummy/public/404_html.html">404.html</a>
-  
-    <li class="file"><a href="../test/dummy/public/422_html.html">422.html</a>
-  
-    <li class="file"><a href="../test/dummy/public/500_html.html">500.html</a>
-  
-    <li class="file"><a href="../test/dummy/public/favicon_ico.html">favicon.ico</a>
-  
-  </ul>
-</nav>
-
-    <nav id="classindex-section" class="section project-section">
-  <h3 class="section-header">Class and Module Index</h3>
-
-  <ul class="link-list">
-  
-    <li><a href="../ApplicationController.html">ApplicationController</a>
-  
-    <li><a href="../ApplicationHelper.html">ApplicationHelper</a>
-  
-    <li><a href="../BingAdsApi.html">BingAdsApi</a>
-  
-    <li><a href="../BingAdsApi/AccountInfo.html">BingAdsApi::AccountInfo</a>
-  
-    <li><a href="../BingAdsApi/AccountPerformanceReportRequest.html">BingAdsApi::AccountPerformanceReportRequest</a>
-  
-    <li><a href="../BingAdsApi/Ad.html">BingAdsApi::Ad</a>
-  
-    <li><a href="../BingAdsApi/AdApiError.html">BingAdsApi::AdApiError</a>
-  
-    <li><a href="../BingAdsApi/AdApiFaultDetail.html">BingAdsApi::AdApiFaultDetail</a>
-  
-    <li><a href="../BingAdsApi/AdGroup.html">BingAdsApi::AdGroup</a>
-  
-    <li><a href="../BingAdsApi/AdLanguage.html">BingAdsApi::AdLanguage</a>
-  
-    <li><a href="../BingAdsApi/ApiException.html">BingAdsApi::ApiException</a>
-  
-    <li><a href="../BingAdsApi/ApiFaultDetail.html">BingAdsApi::ApiFaultDetail</a>
-  
-    <li><a href="../BingAdsApi/ApplicationFault.html">BingAdsApi::ApplicationFault</a>
-  
-    <li><a href="../BingAdsApi/BatchError.html">BingAdsApi::BatchError</a>
-  
-    <li><a href="../BingAdsApi/CallDetailReportRequest.html">BingAdsApi::CallDetailReportRequest</a>
-  
-    <li><a href="../BingAdsApi/Campaign.html">BingAdsApi::Campaign</a>
-  
-    <li><a href="../BingAdsApi/CampaignManagement.html">BingAdsApi::CampaignManagement</a>
-  
-    <li><a href="../BingAdsApi/CampaignPerformanceReportRequest.html">BingAdsApi::CampaignPerformanceReportRequest</a>
-  
-    <li><a href="../BingAdsApi/ClientProxy.html">BingAdsApi::ClientProxy</a>
-  
-    <li><a href="../BingAdsApi/Config.html">BingAdsApi::Config</a>
-  
-    <li><a href="../BingAdsApi/CustomerManagement.html">BingAdsApi::CustomerManagement</a>
-  
-    <li><a href="../BingAdsApi/DataObject.html">BingAdsApi::DataObject</a>
-  
-    <li><a href="../BingAdsApi/EditorialError.html">BingAdsApi::EditorialError</a>
-  
-    <li><a href="../BingAdsApi/Helpers.html">BingAdsApi::Helpers</a>
-  
-    <li><a href="../BingAdsApi/Helpers/ColumnHelper.html">BingAdsApi::Helpers::ColumnHelper</a>
-  
-    <li><a href="../BingAdsApi/Helpers/FilterHelper.html">BingAdsApi::Helpers::FilterHelper</a>
-  
-    <li><a href="../BingAdsApi/Helpers/ScopeHelper.html">BingAdsApi::Helpers::ScopeHelper</a>
-  
-    <li><a href="../BingAdsApi/Helpers/TimeHelper.html">BingAdsApi::Helpers::TimeHelper</a>
-  
-    <li><a href="../BingAdsApi/MobileAd.html">BingAdsApi::MobileAd</a>
-  
-    <li><a href="../BingAdsApi/OperationError.html">BingAdsApi::OperationError</a>
-  
-    <li><a href="../BingAdsApi/PartialErrors.html">BingAdsApi::PartialErrors</a>
-  
-    <li><a href="../BingAdsApi/PerformanceReportRequest.html">BingAdsApi::PerformanceReportRequest</a>
-  
-    <li><a href="../BingAdsApi/ProductAd.html">BingAdsApi::ProductAd</a>
-  
-    <li><a href="../BingAdsApi/ReportAggregation.html">BingAdsApi::ReportAggregation</a>
-  
-    <li><a href="../BingAdsApi/ReportFormat.html">BingAdsApi::ReportFormat</a>
-  
-    <li><a href="../BingAdsApi/ReportLanguage.html">BingAdsApi::ReportLanguage</a>
-  
-    <li><a href="../BingAdsApi/ReportRequest.html">BingAdsApi::ReportRequest</a>
-  
-    <li><a href="../BingAdsApi/ReportRequestStatus.html">BingAdsApi::ReportRequestStatus</a>
-  
-    <li><a href="../BingAdsApi/ReportTimePeriods.html">BingAdsApi::ReportTimePeriods</a>
-  
-    <li><a href="../BingAdsApi/Reporting.html">BingAdsApi::Reporting</a>
-  
-    <li><a href="../BingAdsApi/SOAPHasheable.html">BingAdsApi::SOAPHasheable</a>
-  
-    <li><a href="../BingAdsApi/Service.html">BingAdsApi::Service</a>
-  
-    <li><a href="../BingAdsApi/TextAd.html">BingAdsApi::TextAd</a>
-  
-    <li><a href="../BingAdsApi/TimeZone.html">BingAdsApi::TimeZone</a>
-  
-    <li><a href="../BingAdsApiTest.html">BingAdsApiTest</a>
-  
-    <li><a href="../CampaignManagementTest.html">CampaignManagementTest</a>
-  
-    <li><a href="../CustomerManagementTest.html">CustomerManagementTest</a>
-  
-    <li><a href="../DataObjectTest.html">DataObjectTest</a>
-  
-    <li><a href="../Dummy.html">Dummy</a>
-  
-    <li><a href="../Dummy/Application.html">Dummy::Application</a>
-  
-    <li><a href="../Object.html">Object</a>
-  
-    <li><a href="../ReportRequestTest.html">ReportRequestTest</a>
-  
-    <li><a href="../ReportingTest.html">ReportingTest</a>
-  
-  </ul>
-</nav>
+</div>
 
   </div>
 </nav>
 
-<div id="documentation">
-  <h1 class="class">class BingAdsApi::DataObject</h1>
+<main role="main" aria-labelledby="class-BingAdsApi::DataObject">
+  <h1 id="class-BingAdsApi::DataObject" class="class">
+    class BingAdsApi::DataObject
+  </h1>
 
-  <div id="description" class="description">
+  <section class="description">
     
 <p>Public : Base Class to define Bing API data objects Do not use this class
 directly, use any of the derived classes</p>
@@ -374,7 +108,7 @@ directly, use any of the derived classes</p>
 <p>jlopezn@neonline.cl</p>
 </dd></dl>
 
-  </div><!-- description -->
+  </section>
 
   
   
@@ -388,10 +122,11 @@ directly, use any of the derived classes</p>
 
     
 
-    <!-- Methods -->
     
-     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
-      <h3 class="section-header">Public Class Methods</h3>
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
 
     
       <div id="method-c-new" class="method-detail ">
@@ -420,24 +155,26 @@ input</p>
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File lib/bing-ads-api/data_object.rb, line 21</span>
+            <pre><span class="ruby-comment"># File lib/bing-ads-api/data_object.rb, line 20</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">attributes</span>={})
         <span class="ruby-identifier">attributes</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">val</span><span class="ruby-operator">|</span> <span class="ruby-identifier">send</span>(<span class="ruby-node">&quot;#{key}=&quot;</span>, <span class="ruby-identifier">val</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">respond_to?</span>(<span class="ruby-node">&quot;#{key}=&quot;</span>) }
 <span class="ruby-keyword">end</span></pre>
-          </div><!-- new-source -->
+          </div>
           
         </div>
 
         
 
         
-      </div><!-- new-method -->
+      </div>
 
     
-    </section><!-- public-class-method-details -->
+    </section>
   
-     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
-      <h3 class="section-header">Public Instance Methods</h3>
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
 
     
       <div id="method-i-to_s" class="method-detail ">
@@ -463,30 +200,29 @@ input</p>
 
           
           <div class="method-source-code" id="to_s-source">
-            <pre><span class="ruby-comment"># File lib/bing-ads-api/data_object.rb, line 29</span>
+            <pre><span class="ruby-comment"># File lib/bing-ads-api/data_object.rb, line 28</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">to_s</span>
         <span class="ruby-identifier">to_hash</span>.<span class="ruby-identifier">to_s</span>
 <span class="ruby-keyword">end</span></pre>
-          </div><!-- to_s-source -->
+          </div>
           
         </div>
 
         
 
         
-      </div><!-- to_s-method -->
+      </div>
 
     
-    </section><!-- public-instance-method-details -->
+    </section>
   
-  </section><!-- 5Buntitled-5D -->
+  </section>
+</main>
 
-</div><!-- documentation -->
 
-
-<footer id="validator-badges">
-  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
-  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
-  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
 </footer>
 

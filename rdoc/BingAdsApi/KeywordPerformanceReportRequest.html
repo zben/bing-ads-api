@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class BingAdsApi::KeywordPerformanceReportRequest - RDoc Documentation</title>
+
+<link href="../fonts.css" rel="stylesheet">
+<link href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search_index.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/searcher.js"></script>
+<script src="../js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="PerformanceReportRequest.html">BingAdsApi::PerformanceReportRequest</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+    <li class="calls-super" ><a href="#method-i-to_hash">#to_hash</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-BingAdsApi::KeywordPerformanceReportRequest">
+  <h1 id="class-BingAdsApi::KeywordPerformanceReportRequest" class="class">
+    class BingAdsApi::KeywordPerformanceReportRequest
+  </h1>
+
+  <section class="description">
+    
+<p>Public : Defines the base object for all report requests. Do not
+instantiate this object. Instead, you may instantiate one  of the following
+report request objects which derives from this object to request a report.</p>
+
+<p>Reference: <a
+href="http://msdn.microsoft.com/en-us/library/bing-ads-reporting-bing-ads-reportrequest.aspx">msdn.microsoft.com/en-us/library/bing-ads-reporting-bing-ads-reportrequest.aspx</a></p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>jlopezn@neonline.cl</p>
+</dd></dl>
+
+<h3 id="class-BingAdsApi::KeywordPerformanceReportRequest-label-Usage">Usage<span><a href="#class-BingAdsApi::KeywordPerformanceReportRequest-label-Usage">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<pre class="ruby"><span class="ruby-identifier">request</span> = <span class="ruby-constant">BingAdsApi</span><span class="ruby-operator">::</span><span class="ruby-constant">KeywordPerformanceReportRequest</span>.<span class="ruby-identifier">new</span>(
+  :<span class="ruby-identifier">format</span>   =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">xml</span>,
+  :<span class="ruby-identifier">language</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">english</span>,
+  :<span class="ruby-identifier">report_name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Me report&quot;</span>,
+  :<span class="ruby-identifier">aggregation</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">hourly</span>,
+  :<span class="ruby-identifier">columns</span> =<span class="ruby-operator">&gt;</span> [:<span class="ruby-identifier">account_name</span>, :<span class="ruby-identifier">account_number</span>, :<span class="ruby-identifier">time_period</span>],
+  <span class="ruby-comment"># The filter is specified as a hash</span>
+  :<span class="ruby-identifier">filter</span> =<span class="ruby-operator">&gt;</span> {
+    <span class="ruby-comment"># specifies the Bing expected String value</span>
+    :<span class="ruby-identifier">ad_distribution</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Search&quot;</span>, 
+    <span class="ruby-comment"># specifies criteria as a snake case symbol</span>
+    :<span class="ruby-identifier">device_os</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">android</span>,
+    :<span class="ruby-identifier">device_type</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">tablet</span>,
+    <span class="ruby-comment"># criteria nil is similar to not specify it at all</span>
+    :<span class="ruby-identifier">status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span> },
+  :<span class="ruby-identifier">scope</span> =<span class="ruby-operator">&gt;</span> { 
+    :<span class="ruby-identifier">account_ids</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">123456</span>, <span class="ruby-value">234567</span>],
+    :<span class="ruby-identifier">campaigns</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-operator">&lt;</span><span class="ruby-constant">BingAdsApi</span><span class="ruby-operator">::</span><span class="ruby-constant">CampaignReportScope</span><span class="ruby-operator">&gt;</span>] },
+  <span class="ruby-comment"># predefined date</span>
+  :<span class="ruby-identifier">time</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">this_week</span>)
+
+<span class="ruby-identifier">request2</span> = <span class="ruby-constant">BingAdsApi</span><span class="ruby-operator">::</span><span class="ruby-constant">KeywordPerformanceReportRequest</span>.<span class="ruby-identifier">new</span>(
+  :<span class="ruby-identifier">format</span>   =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">csv</span>,
+  :<span class="ruby-identifier">language</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">french</span>,
+  :<span class="ruby-identifier">report_name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Me report&quot;</span>,
+  :<span class="ruby-identifier">aggregation</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">daily</span>,
+  :<span class="ruby-identifier">columns</span> =<span class="ruby-operator">&gt;</span> [:<span class="ruby-identifier">account_name</span>, :<span class="ruby-identifier">account_number</span>, :<span class="ruby-identifier">time_period</span>],
+  <span class="ruby-comment"># no filter is specified </span>
+  :<span class="ruby-identifier">scope</span> =<span class="ruby-operator">&gt;</span> { 
+    :<span class="ruby-identifier">account_ids</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">123456</span>, <span class="ruby-value">234567</span>],
+    :<span class="ruby-identifier">campaigns</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-operator">&lt;</span><span class="ruby-constant">BingAdsApi</span><span class="ruby-operator">::</span><span class="ruby-constant">CampaignReportScope</span><span class="ruby-operator">&gt;</span>] },
+  <span class="ruby-comment"># Custom date range</span>
+  :<span class="ruby-identifier">time</span> =<span class="ruby-operator">&gt;</span> {
+    :<span class="ruby-identifier">custom_date_range_start</span> =<span class="ruby-operator">&gt;</span> {:<span class="ruby-identifier">day</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>, :<span class="ruby-identifier">month</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">12</span>, :<span class="ruby-identifier">year</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">2013</span>},
+    :<span class="ruby-identifier">custom_date_range_end</span>   =<span class="ruby-operator">&gt;</span> {:<span class="ruby-identifier">day</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">12</span>, :<span class="ruby-identifier">month</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">12</span>, :<span class="ruby-identifier">year</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">2013</span>} }
+  )
+</pre>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="COLUMNS">COLUMNS
+        
+        <dd><p>Valid Columns for this report request</p>
+        
+      
+        <dt id="FILTERS">FILTERS
+        
+        <dd><p>Valid Filters for this report request</p>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(attributes={})</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Public : Constructor. Adds a validations for the columns, filter  and scope
+attributes</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>jlopezn@neonline.cl</p>
+</dd></dl>
+
+<h3 id="method-c-new-label-Parameters">Parameters<span><a href="#method-c-new-label-Parameters">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<ul><li>
+<p><code>attributes</code> - Hash with the report request attributes</p>
+</li></ul>
+
+<h3 id="method-c-new-label-Example">Example<span><a href="#method-c-new-label-Example">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+
+<pre class="ruby"><span class="ruby-identifier">request</span> = <span class="ruby-constant">BingAdsApi</span><span class="ruby-operator">::</span><span class="ruby-constant">KeywordPerformanceReportRequest</span>.<span class="ruby-identifier">new</span>(
+  :<span class="ruby-identifier">format</span>   =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">xml</span>,
+  :<span class="ruby-identifier">language</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">english</span>,
+  :<span class="ruby-identifier">report_name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Me report&quot;</span>,
+  :<span class="ruby-identifier">aggregation</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">hourly</span>,
+  :<span class="ruby-identifier">columns</span> =<span class="ruby-operator">&gt;</span> [:<span class="ruby-identifier">account_name</span>, :<span class="ruby-identifier">account_number</span>, :<span class="ruby-identifier">time_period</span>],
+  <span class="ruby-comment"># The filter is specified as a hash</span>
+  :<span class="ruby-identifier">filter</span> =<span class="ruby-operator">&gt;</span> {
+    <span class="ruby-comment"># specifies the Bing expected String value</span>
+    :<span class="ruby-identifier">ad_distribution</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Search&quot;</span>, 
+    <span class="ruby-comment"># specifies criteria as a snake case symbol</span>
+    :<span class="ruby-identifier">device_os</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">android</span>,
+    :<span class="ruby-identifier">device_type</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">tablet</span>,
+    <span class="ruby-comment"># criteria nil is similar to not specify it at all</span>
+    :<span class="ruby-identifier">status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span> },
+  :<span class="ruby-identifier">scope</span> =<span class="ruby-operator">&gt;</span> { 
+    :<span class="ruby-identifier">account_ids</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">123456</span>, <span class="ruby-value">234567</span>],
+    :<span class="ruby-identifier">campaigns</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-operator">&lt;</span><span class="ruby-constant">BingAdsApi</span><span class="ruby-operator">::</span><span class="ruby-constant">CampaignReportScope</span><span class="ruby-operator">&gt;</span>] },
+  <span class="ruby-comment"># predefined date</span>
+  :<span class="ruby-identifier">time</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">this_week</span>)
+
+<span class="ruby-identifier">request2</span> = <span class="ruby-constant">BingAdsApi</span><span class="ruby-operator">::</span><span class="ruby-constant">KeywordPerformanceReportRequest</span>.<span class="ruby-identifier">new</span>(
+  :<span class="ruby-identifier">format</span>   =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">csv</span>,
+  :<span class="ruby-identifier">language</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">french</span>,
+  :<span class="ruby-identifier">report_name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;Me report&quot;</span>,
+  :<span class="ruby-identifier">aggregation</span> =<span class="ruby-operator">&gt;</span> :<span class="ruby-identifier">daily</span>,
+  :<span class="ruby-identifier">columns</span> =<span class="ruby-operator">&gt;</span> [:<span class="ruby-identifier">account_name</span>, :<span class="ruby-identifier">account_number</span>, :<span class="ruby-identifier">time_period</span>],
+  <span class="ruby-comment"># no filter is specified </span>
+  :<span class="ruby-identifier">scope</span> =<span class="ruby-operator">&gt;</span> { 
+    :<span class="ruby-identifier">account_ids</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">123456</span>, <span class="ruby-value">234567</span>],
+    :<span class="ruby-identifier">campaigns</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-operator">&lt;</span><span class="ruby-constant">BingAdsApi</span><span class="ruby-operator">::</span><span class="ruby-constant">CampaignReportScope</span><span class="ruby-operator">&gt;</span>] },
+  <span class="ruby-comment"># Custom date range</span>
+  :<span class="ruby-identifier">time</span> =<span class="ruby-operator">&gt;</span> {
+    :<span class="ruby-identifier">custom_date_range_start</span> =<span class="ruby-operator">&gt;</span> {:<span class="ruby-identifier">day</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>, :<span class="ruby-identifier">month</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">12</span>, :<span class="ruby-identifier">year</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">2013</span>},
+    :<span class="ruby-identifier">custom_date_range_end</span>   =<span class="ruby-operator">&gt;</span> {:<span class="ruby-identifier">day</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">12</span>, :<span class="ruby-identifier">month</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">12</span>, :<span class="ruby-identifier">year</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">2013</span>} }
+  )
+</pre>
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="PerformanceReportRequest.html#method-c-new">BingAdsApi::PerformanceReportRequest.new</a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/bing-ads-api/data/reporting/keyword_performance_report_request.rb, line 108</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">attributes</span>={})
+        <span class="ruby-identifier">raise</span> <span class="ruby-constant">Exception</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Invalid columns&quot;</span>) <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">valid_columns</span>(<span class="ruby-constant">COLUMNS</span>, <span class="ruby-identifier">attributes</span>[<span class="ruby-value">:columns</span>])
+        <span class="ruby-identifier">raise</span> <span class="ruby-constant">Exception</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Invalid filters&quot;</span>) <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">valid_filter</span>(<span class="ruby-constant">FILTERS</span>, <span class="ruby-identifier">attributes</span>[<span class="ruby-value">:filter</span>])
+        <span class="ruby-identifier">raise</span> <span class="ruby-constant">Exception</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Invalid scope&quot;</span>) <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">valid_scope</span>(<span class="ruby-identifier">attributes</span>[<span class="ruby-value">:scope</span>])
+        <span class="ruby-keyword">super</span>(<span class="ruby-identifier">attributes</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-to_hash" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">to_hash</span><span
+            class="method-args">(keys = :underscore)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <dl class="rdoc-list note-list"><dt>Public
+<dd>
+<p>Returns the object as a Hash valid for SOAP requests</p>
+</dd><dt>Author
+<dd>
+<p>jlopezn@neonline.cl</p>
+</dd></dl>
+
+<h3 id="method-i-to_hash-label-Parameters">Parameters<span><a href="#method-i-to_hash-label-Parameters">&para;</a> <a href="#documentation">&uarr;</a></span></h3>
+<ul><li>
+<p><code>keys_case</code> - case for the hashes keys: underscore or camelcase</p>
+</li></ul>
+<dl class="rdoc-list note-list"><dt>Returns
+<dd>
+<p>Hash</p>
+</dd></dl>
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="PerformanceReportRequest.html#method-i-to_hash">BingAdsApi::PerformanceReportRequest#to_hash</a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="to_hash-source">
+            <pre><span class="ruby-comment"># File lib/bing-ads-api/data/reporting/keyword_performance_report_request.rb, line 124</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_hash</span>(<span class="ruby-identifier">keys</span> = <span class="ruby-value">:underscore</span>)
+        <span class="ruby-identifier">hash</span> = <span class="ruby-keyword">super</span>(<span class="ruby-identifier">keys</span>)
+        <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">get_attribute_key</span>(<span class="ruby-string">&#39;columns&#39;</span>, <span class="ruby-identifier">keys</span>)] = 
+                <span class="ruby-identifier">columns_to_hash</span>(<span class="ruby-constant">COLUMNS</span>, <span class="ruby-identifier">columns</span>, <span class="ruby-identifier">keys</span>)
+        <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">get_attribute_key</span>(<span class="ruby-string">&#39;filter&#39;</span>, <span class="ruby-identifier">keys</span>)] = 
+                <span class="ruby-identifier">filter_to_hash</span>(<span class="ruby-constant">FILTERS</span>, <span class="ruby-identifier">keys</span>)
+        <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">get_attribute_key</span>(<span class="ruby-string">&#39;scope&#39;</span>, <span class="ruby-identifier">keys</span>)] = <span class="ruby-identifier">scope_to_hash</span>(<span class="ruby-identifier">keys</span>) 
+        <span class="ruby-identifier">hash</span>[<span class="ruby-string">&quot;@xsi:type&quot;</span>] = <span class="ruby-identifier">type_attribute_for_soap</span> 
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">hash</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

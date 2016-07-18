@@ -226,6 +226,7 @@ constants:
       ad_distribution:
         search: 'Search'
         content: 'Content'
+        native: 'Native'
       device_os:
         other: 'Other'
         windows: 'Windows'
@@ -237,6 +238,14 @@ constants:
         smart_phone: 'SmartPhone'
         non_smart_phone: 'NonSmartPhone'
         tablet: 'Tablet'
+      status:
+        submited: 'Submited'
+        cancelled: 'Cancelled'
+        deleted: 'Deleted'
+        paused: 'Paused'
+        budget_paused: 'BudgetPaused'
+        active: 'Active'
+        suspended: 'Suspended'
       campaign_status:
         submited: 'Submited'
         cancelled: 'Cancelled'
@@ -244,6 +253,40 @@ constants:
         paused: 'Paused'
         budget_paused: 'BudgetPaused'
         active: 'Active'
+      ad_group_status:
+        submitted: 'Submitted'
+        expired: 'Expired'
+        deleted: 'Deleted'
+        draft: 'Draft'
+        paused: 'Paused'
+        active: 'Active'
+      keyword_status:
+        deleted: 'Deleted'
+        paused: 'Paused'
+        active: 'Active'
+      ad_type:
+        text: 'Text'
+        mobile: 'Mobile'
+        image: 'Image'
+        rich_media: 'RichMedia'
+        local: 'Local'
+        third_party_creative: 'ThirdPartyCreative'
+        rich_ad: 'RichAd'
+        product: 'Product'
+        app_install: 'AppInstall'
+      bid_match_type:
+        exact: 'Exact'
+        phrase: 'Phrase'
+        broad: 'Broad'
+        content: 'Content'
+      delivered_match_type:
+        exact: 'Exact'
+        phrase: 'Phrase'
+        broad: 'Broad'
+        content: 'Content'
+      bid_strategy_type:
+        manual_cpc: 'ManualCpc'
+        enhanced_cpc: 'EnhancedCpc'
     # From here the constants are specific per ReportRequest derive
     # This includes columns, filters and scopes (if any)
     account_performance_report:
@@ -447,7 +490,6 @@ constants:
         final_app_url: "FinalAppURL"
         bid_strategy_type: "BidStrategyType"
       filter:
-        account_status: "AccountStatus"
         ad_distribution: "AdDistribution"
         ad_group_status: "AdGroupStatus"
         ad_type: "AdType"
@@ -456,7 +498,6 @@ constants:
         campaign_status: "CampaignStatus"
         delivered_match_type: "DeliveredMatchType"
         device_type: "DeviceType"
-        keyword_relevance: "KeywordRelevance"
         keyword_status: "KeywordStatus"
         keywords: "Keywords"
         landing_page_relevance: "LandingPageRelevance"

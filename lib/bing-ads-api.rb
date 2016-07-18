@@ -32,6 +32,8 @@ Dir[File.join(File.dirname(__FILE__), 'bing-ads-api', 'data', 'reporting', 'help
 require 'bing-ads-api/data/reporting/performance_report_request'
 require 'bing-ads-api/data/reporting/account_performance_report_request'
 require 'bing-ads-api/data/reporting/campaign_performance_report_request'
+require 'bing-ads-api/data/reporting/keyword_performance_report_request'
+require 'bing-ads-api/data/reporting/call_detail_performance_report_request'
 # require 'bing-ads-api/data/reporting/ad_group_performance_report_request'
 # require 'bing-ads-api/data/reporting/ad_performance_report_request'
 

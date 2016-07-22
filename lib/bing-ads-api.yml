@@ -500,7 +500,4 @@ constants:
         device_type: "DeviceType"
         keyword_status: "KeywordStatus"
         keywords: "Keywords"
-        landing_page_relevance: "LandingPageRelevance"
-        landing_page_user_experience: "LandingPageUserExperience"
         language_code: "LanguageCode"
-        quality_score: "QualityScore"

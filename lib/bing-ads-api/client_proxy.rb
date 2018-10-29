@@ -44,8 +44,7 @@ module BingAdsApi
 		# 
 		# 
 		# === Options
-		# * username - Bing Ads username 
-		# * passwrod - Bing Ads user's sign-in password
+		# * authentication_token - Bing Ads Oauth authentication_token 
 		# * developer_token - client application's developer access token
 		# * customer_id - identifier for the customer that owns the account
 		# * account_id - identifier of the account that own the entities in the request
@@ -54,8 +53,7 @@ module BingAdsApi
 		# 
 		# === Examples 
 		#   options = {
-		#     :username => "username",
-		#     :password => "password",
+		#     :authentication_token => "authentication_token",
 		#     :developer_token => "THE_TOKEN",
 		#     :customer_id => "123456",
 		#     :account_id => "123456",
@@ -67,12 +65,7 @@ module BingAdsApi
 		# Returns:: ClientProxy instance
 		def initialize(options=nil)
 			if options
-				if options[:authentication_token]
-					@authentication_token ||= options[:authentication_token]
-				else
-					@username    ||= options[:username]
-					@password    ||= options[:password]
-				end
+				@authentication_token ||= options[:authentication_token]
 				@developer_token ||= options[:developer_token]
 				@wsdl_url        ||= options[:wsdl_url]
 				@account_id      ||= options[:account_id]

@@ -26,7 +26,7 @@ module BingAdsApi
 	class ClientProxy
 		
 		# Public : Namespace para atributos bing. Hace referencia a la versión de API usada 
-		NAMESPACE = :v11
+		NAMESPACE = :v12
 
 		# Public : Case empleado los nombres de atributos en los XML 
 		KEYS_CASE = :camelcase

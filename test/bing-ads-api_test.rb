@@ -67,7 +67,7 @@ class BingAdsApiTest < ActiveSupport::TestCase
 			:developer_token => @developer_token,
 			:customer_id => @customer_id,
 			:account_id => @account_id,
-			:wsdl_url => "https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl"
+			:wsdl_url => "https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc?singleWsdl"
 		}
 		client = BingAdsApi::ClientProxy.new(options)
 		#puts client.inspect
@@ -85,7 +85,7 @@ class BingAdsApiTest < ActiveSupport::TestCase
 			:developer_token => @developer_token,
 			:customer_id => @customer_id,
 			:account_id => @account_id,
-			:wsdl_url => "https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl",
+			:wsdl_url => "https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc?singleWsdl",
 			:proxy => {
 				:logger => Rails.logger, 
 				:encoding => "UTF-8"
@@ -107,7 +107,7 @@ class BingAdsApiTest < ActiveSupport::TestCase
 			:developer_token => @developer_token,
 			:customer_id => @customer_id,
 			:account_id => @account_id,
-			:wsdl_url => "https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl",
+			:wsdl_url => "https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc?singleWsdl",
 			:proxy => {
 				:logger => Rails.logger, 
 				:encoding => "UTF-8"
@@ -136,7 +136,7 @@ class BingAdsApiTest < ActiveSupport::TestCase
 			:developer_token => @developer_token,
 			:customer_id => @customer_id,
 			:account_id => @account_id,
-			:wsdl_url => "https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl"
+			:wsdl_url => "https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc?singleWsdl"
 		}
 		
 		client = BingAdsApi::ClientProxy.new(options)
